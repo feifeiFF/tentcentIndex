@@ -1,946 +1,1102 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<title>腾讯首页</title>
 	<style type="text/css">
-		*{
+		* {
 			padding: 0px;
-			margin:0px;
+			margin: 0px;
 		}
-		body{
-			font: 11px SimSun,"Arial Narrow",HELVETICA;
+
+		body {
+			font: 11px SimSun, "Arial Narrow", HELVETICA;
 		}
-		.c1{
+
+		.c1 {
 			clear: both;
 		}
-		.inner{
+
+		.inner {
 			width: 1000px;
 			margin: 0 auto;
 		}
-	    .header .inner{
-            float: left;
-	    	}
-		.header .logo{
+
+		.header .inner {
+			float: left;
+		}
+
+		.header .logo {
 			float: left;
 			margin-left: 0px;
 		}
-		.header .logo img{
+
+		.header .logo img {
 			height: 29px;
 			width: 108px;
 			padding: 22px 160px 19px 0px;
-            float: left;
-            margin-left: 0px;			
+			float: left;
+			margin-left: 0px;
 		}
-		.header .sosuo .sosuokuang{
+
+		.header .sosuo .sosuokuang {
 			float: left;
 			width: 290px;
 			height: 35px;
-            border-radius: 2px;
+			border-radius: 2px;
 			border: 1px solid #C4C4C6;
 			float: left;
 			margin-top: 18px;
 		}
-		.header .sosuo .sosuokuang .sousuowangye{
-			width:68px;
-			height: 35px;		
-		    background: url(images/xwy.png) no-repeat;		
-            float: left;
-		    background-position: -877px -199px;	
+
+		.header .sosuo .sosuokuang .sousuowangye {
+			width: 68px;
+			height: 35px;
+			background: url(images/xwy.png) no-repeat;
+			float: left;
+			background-position: -877px -199px;
 		}
-		.header .sosuo .sosuokuang .selectbutton{
-			color:#ABA6B5;
+
+		.header .sosuo .sosuokuang .selectbutton {
+			color: #ABA6B5;
 			font-size: 14px;
 			font-weight: 700;
 			border: none;
 			cursor: pointer;
 			padding: 0px 10px;
-			line-height: 35px;			
-			appearance:none;
-			-moz-appearance:none;
-			-webkit-appearance:none;
+			line-height: 35px;
+			appearance: none;
+			-moz-appearance: none;
+			-webkit-appearance: none;
 			outline: none;
 			display: block;
 		}
-		.header .sosuo .sosuokuang .input{
+
+		.header .sosuo .sosuokuang .input {
 			float: left;
 			width: 222px;
 			height: 35px;
 		}
-		.header .sosuo .sosuokuang .input input{
+
+		.header .sosuo .sosuokuang .input input {
 			line-height: 34px;
 			border: none;
-			appearance:none;
-			-moz-appearance:none;
-			-webkit-appearance:none;
+			appearance: none;
+			-moz-appearance: none;
+			-webkit-appearance: none;
 			outline: none;
 			float: left;
 			width: 195px;
 		}
-		.header .sosuo .sosuokuang .s{
-			float:left ;
+
+		.header .sosuo .sosuokuang .s {
+			float: left;
 			width: 23px;
-			height:30px;
+			height: 30px;
 			padding-top: 5px;
 		}
-		.header .sosuo .sosuokuang .s img{
+
+		.header .sosuo .sosuokuang .s img {
 			float: left;
 			width: 23px;
 			height: 23px;
 		}
-		 .header .searchbut{
-		 	height: 37px;
-		 	width: 90px;
-		 	font-size: 16px;
-		    margin-top: 17.5px;
-            float: left;
-		 }
-		  .header .searchbut button{
-		  	height: 37px;
-		 	width: 90px;
-		 	background: url(images/sogouSearchBtn.png) no-repeat;
-		 	text-indent: -999em;
-		 	border: none;
-		 	cursor: pointer;
-		  }
-		.header .zoneIcon{
+
+		.header .searchbut {
+			height: 37px;
+			width: 90px;
+			font-size: 16px;
+			margin-top: 17.5px;
+			float: left;
+		}
+
+		.header .searchbut button {
+			height: 37px;
+			width: 90px;
+			background: url(images/sogouSearchBtn.png) no-repeat;
+			text-indent: -999em;
+			border: none;
+			cursor: pointer;
+		}
+
+		.header .zoneIcon {
 			margin-top: 24px;
 			margin-left: 228px;
-            width: 25px;
-            height: 24px;
-            float: left;
-            background: url(images/qzoneIcon.png);
-            cursor: pointer;
+			width: 25px;
+			height: 24px;
+			float: left;
+			background: url(images/qzoneIcon.png);
+			cursor: pointer;
 		}
-		.header .mailIcon{
+
+		.header .mailIcon {
 			margin-top: 24px;
 			margin-left: 14px;
-            width: 25px;
-            height: 24px;
-            float: left;
-            cursor: pointer;
-            background: url(images/mailIcon.png) no-repeat;
+			width: 25px;
+			height: 24px;
+			float: left;
+			cursor: pointer;
+			background: url(images/mailIcon.png) no-repeat;
 		}
-		.header .loginIcon{
+
+		.header .loginIcon {
 			margin-top: 18px;
 			margin-left: 14px;
-            width: 39px;
-            height: 37px;
-            float: left;
-            background: url(images/loginGrayIcon.png) no-repeat;
-           background-position: -153px 0px;
-        }
-         .nav{
-            width: 100%;
-        }
-         .nav .navinner{
-           	margin:0 auto;
-            width: 1000px;
-          	background-color: #0994D3;
-        	height: 65px;
-        } 
-        .nav .navinner .navinin{
-              width: 958px;
-              height: 57px;
-              float: left;
-              padding-left: 15px;
-              padding-right: 15px;
-              margin-top: 10px;                 
-        }
-        .nav .navinner .navinin div{
-              float: left;
-              padding-left:16px;
-              width: 126px;
-              height: 25px;
-              font-size: 14px;
-              font-family: STHeiti,'Simsun','Microsoft YaHei',arial;
-        }      
-        .navinner div a{
-              width: 29px;
-              padding-left: 1px;
-              float: left;
-              color: white;
-              text-decoration: none;
-              line-height: 22px;
-              margin-right:0.8em;             
-        }
-        .navinner div a:link,.navinner div a:actived{
-              color: white;
-              text-decoration: none;
-        }
-        .navinner div a:hover{
-              background-color:#fff;
-              color:navy;
-              text-decoration: none;
-              line-height: 22px;
-              margin-right:0.8em;
-        }                  
-       	.timezhou .erweima{
-              float: left;
-              width: 700px;
-              height: 74px;
-              background-color: #665432;
-              background: url("images/timezhou.jpg");
-              cursor: pointer;
-              margin-bottom: 12px;
-              margin-top: 12px;
-        }
-        .timezhou .service{
-              float: left;
-              width: 280px;
-              height: 74px;
-              background-color: #999;
-              margin-left: 20px;
-              background: url("images/tencentsafe.png");
-              cursor: pointer;
-              margin-bottom: 12px;
-              margin-top: 12px;
-        }
-        .timezhou a{
-              display: block;
-        }         
+			width: 39px;
+			height: 37px;
+			float: left;
+			background: url(images/loginGrayIcon.png) no-repeat;
+			background-position: -153px 0px;
+		}
 
-       	.content_mainnews .layoutleft{
-              float: left;
-              width:700px;
-              height: 970px;             		
-              margin-right: 20px;
-        }
-        .content_mainnews .mainnews{
-              float: left;
-              margin-right: 20px;
-              width: 350px;
-              height: 970px; 
-         }
-       .content_mainnews .layoutright{
-          	  float: left;
-              width: 280px;
-              height: 970px;             		
-         }            
-        .content_mainnews .content2{
-              width: 350px;
-              height: 936px;
-              float: left;
-        }
-        .content_mainnews .leftAreas{
-              border-top: 1px solid #C6DFF0;
-        }
-       .content_mainnews  .hd h2{
-              font-size: 14px;             		
-              line-height: 34px;
-              text-indent: 1em;          		
+		.nav {
+			width: 100%;
+		}
 
-        } 
-        .content_mainnews  .hd h2 a:hover{
-              text-decoration: underline;
-        }
-        .content_mainnews  ul{
-              list-style: none;
-         }
-        .content_mainnews li.bt a{
-              color:#3c63a0;
-              font-weight: bold;
-        }
-        .content_mainnews .hd h2 a{
-              color: #0872C6;
-              text-decoration: none;
-         }
-        .content_mainnews li.bt a:hover{
-              color:#E70002;
-              font-weight: bold;
-        }
-        .content_mainnews li{
-              line-height: 28px;
-              font-size: 14px;
-                   
-         }
-        .content_mainnews  a{
-             color: #172c45;
-             text-decoration: none;
-        }
-        .content_mainnews  a:hover{
-               color:red;
-               cursor: pointer;
-               text-decoration:underline;
-        }
-        .content_mainnews .content2 .imageArea{
-               float:left ;
-               width: 108px;
-               height: 70px;
-               padding-top: 10px;
-               padding-bottom:10px;
-        }
-        .content_mainnews .content2 .txtarea{
-               float: left;
-               width: 208px;
-               height: 70px;
-               margin-left: 15px;
-               padding-top: 10px;
-               padding-bottom: 10px;
-        }
-        .content_mainnews .content2 .txtarea a{
-               line-height: 28px;
-               color: #3b639f;
-         }
-        .content_mainnews  a.sp{
-               padding-left: 18px;
-               background: url("images/iconNew.png") no-repeat 0px -47.5px;
-               line-height: 28px;
-        }
-        .content_mainnews .content2 .imageArea1{
-               float:left ;
-               width: 108px;
-               height: 70px;
-               padding-top:10px;
-               padding-bottom: 10px;
-        }
-        .content_mainnews .content2 .txtarea1{
-               float: left;
-               width: 208px;
-               height: 70px;
-               margin-left: 15px;
-               padding-top:10px;
-               padding-bottom:10px;
-        }
-        .content_mainnews .content2 .txtarea1 a{
-               line-height: 28px;
-               color: #3B63B7;
-        }
-        .content_mainnews .content2 .ul3 ul  a.sp{
-             	padding-left: 18px;
-             	background: url("images/iconNew.png") no-repeat 0px -99px;
-             	line-height: 28px;
-         }
-        .content_mainnews .topic{
-               	width: 330px;
-             	float: left;
-        }
-        .content2_m ul li.bt{
-                text-indent: 2em;
-        }
-        .content_mainnews .topic h2{
-             	font-size: 14px;             		
-             	line-height: 34px;
-        }           	
-             
-        .content_mainnews .topic  a img{
-             	float: right;
-             	text-decoration: none;
-             	padding-top: 5px;
-        }
-        .content_mainnews .topic .content2_m .ul1{
-             	padding-bottom: 16px;
-         }
-         .content_mainnews .topic .content2_m .rebotitle{
-             	border-top: 1px solid #C6DFF0;
-             	height: 32px;             		
-         }
-         .content_mainnews .topic .content2_m .rebotitle a{
-                display: block;
-                float: left;
-                line-height: 28px;
-                width: 86px;
-                text-align: center;
-                color: #0872C6;
-                height: 28px;               
-        }
-        .content_mainnews .topic .content2_m .rebotitle a:hover{   
-                border-top: 2px solid #001FFF;  
-                line-height: 26px;       	
-        }
-        .content_mainnews .topic .content2_m .db{
-             	float: left;
-             	width: 310px;
-             	height: 110px;
-             	padding-right: 20px;
-             	padding-top: 12px;
-         }
-        .content_mainnews .topic .content2_m .db p {
-                text-align: center;
-                display: block;
-                padding-top: 5px;
-        }
-        .content_mainnews .topic .content2_m .db .db_left{
-                float: left;
-                width: 145px;
-                height: 80px;
-        }
-        .content_mainnews .topic .content2_m .db .db_right{
-                float:right;
-                width: 145px;
-                height: 80px;
-         }
-       .content_mainnews .topic .content2_m .ul2{
-                border-bottom: 1px solid #C6DFF0;
-                padding-bottom: 18px;
-         }
-        .content_mainnews .layoutright .productNav{
-                width: 238px;
-                height: 235px;
-                font-size: 14px;
-                font-family: arial;
-                border: 1px solid #d2e1f2;
-                border-top: none;
-                padding-right: 40px;
-                background:url(images/productNavBg1.5.516.png) no-repeat right -1px ; 
-         }
-        .lh28{
-           		line-height: 28px;
-        }
-        .w248{
-           		width: 238px;
-        }
-        .red{
-           		color:#bd0a01 !important;
-        }
-        .content_mainnews .layoutright .productNav .product01{
-           		padding: 8px 0px 0px 10px; 
-         		height: 25px;  
-         		border-top:1px solid #d2e1f1;          			     		
-        }
-        .content_mainnews .layoutright .productNav .product02{
-           	     padding: 3px 0px 0px 10px;          		
-           	     height: 26px;    
-           	     padding-top: 10px;       			
-           	     background: #f5f8fc;           			 
-        }
-         .content_mainnews .layoutright .productNav .product03{
-           		 padding:4px 0px 0px 10px;    		
-           		 height: 56px;  
-           		 padding-top: 10px;           			     		
-         }
-         .content_mainnews .layoutright .productNav .product04{
-           	     padding:4px 0px 0px 10px;           		
-           	     height: 57px;           			
-           	     background: #f5f8fc;           			
-        }
-        .content_mainnews .layoutright .productNav .product05{
-           	     padding:4px 0px 0px 10px;           		
-           	     height: 24px;         			        			
-        }
-        .content_mainnews .layoutright .productNav a{
-             	 color: #2b4c7e;
-             	 margin-right: 9px;
-        }
-        .content_mainnews .layoutright .sghz{
-             	 background: url(images/280x320_0.jpg) no-repeat;
-             	 width: 280px;
-             	 height: 337px;
-             	 margin: 22px 0px 0px 0px;
-        }
-        .content_mainnews .layoutright .zixuangu{
-                 border: 1px solid #d2e1f1;
-                 width: 278px;
-                 height: 187px;
-                 margin-top: 0px;
-        }
-        .content_mainnews .layoutright .xinzuoyunshi{
-                 border: 1px solid #d2e1f1;
-                 width: 278px;
-                 height: 166px;
-                 margin-top: 11px;
-       }
-        .zixuangu .hd{
-                 width: 278px;
-                 height: 35px;
-         }
-        .zixuangu .hd h2{
-                 float: left;
-                 padding-right: 35px;
-        }
-        .financeSearch input {
-                 border: 1px solid #d4d4d4;
-                 border-right: 0;
-                 color: #a0a0a0;
-                 margin-top: 6px;
-                 line-height: 19px;
-                 width: 108px;
-                 font-size: 12px;
-                 float: left;
-            }
-        .financeSearch #search_btn {
-                 background-position: -600px -160px;
-                 border: 0;
-                 margin: 0;
-                 padding: 0;
-                 height: 21px;
-                 width: 35px;
-                 float: left;
-                 margin-top: 6px;
-                 text-indent: -9999px;
-                 cursor: pointer;
-                 background: url(images/xwy.png) -599px -160px;
-            }
-         .financeTab{
-            	padding: 13px 0px 13px 15px;
-            	
-         }
-         .zixuangu .financeTab li {
-                 float: left;
-                 width: 47px;
-                 height: 22px;
-                 line-height: 22px;
-                 text-align: center;
-                 border-right: 1px solid #dde7f2;
-                 cursor: pointer;             
-                 overflow: hidden;
-         }
-         .zixuangu .financeTab li a{
-                 color: #3b639f;
-         }
-         .zixuangu .financeTab li a:hover{
-                 display: block;
-                 color: white;
-                 background-color: #458fce;
-                 text-decoration: none;
-         }
-         .zixuangu .gushi{
-         	     padding: 20px 20px 0px;
-         }
-         .zixuangu .zoushitu {
-         	     float: left;
-         	     width: 140px;
-          	     height: 60px;
-         }
-          .zixuangu .zoushitu_R{
-          	     float: left;
-                 padding:0px 0px 15px 8px;
-          
-          }
-          .gushi p.loginzixuangu a{
-          	     width: 100%;
-          	     display: block;
-          
-          }
-           .zixuangu .zoushitu_R .price{
-                  color: #41a98d;
-                  font: bold 20px/38px Tahoma;
-           }
-            .zixuangu .zoushitu_R .s{
-                  color: #41a98d;
-                  font:normal 12px/12px Tahoma;
-           }
-          .zixuangu .zoushitu a img{
-                  width: 140px;
-          	      height: 70px;
-          	      border: 1px solid #d2e0ef;
-          	      border-left: none;
-          	      border-bottom: none;      
-          }
-          .xinzuoyunshi .xinzuochaxun .imgxz{
-          	      background: url(images/astroIcon.png) no-repeat 0px -50px;
-          	      width: 50px;
-          	      height: 50px;
-          	      float: left;
-          	      margin-left: 20px;
-          	      margin-right: 10px;
-          }
-           .xinzuoyunshi .todayyunshi{
-           	      float: left;
-           	      padding-top:10px;
-          }
-          .xinzuochaxun p.xiangxi{
-            	  padding:5px 10px ;
-            	  width: 240px;
-            	
-          }   
-          .xinzuoyunshi .yunshixin{
-                  width: 64px ;
-                  margin-top: 10px;
-                  float:left;
-                  height:15px;
-                  background: url(images/yunshi.png) no-repeat 0px -27px;
-           }        
-          .xinzuochaxun{
-          	      overflow: hidden;
-          }
-          .xinzuoyunshi p.xiangxi{
-          	      width: 240px;
-          	      height: 82px;
-          	      padding-left: 20px;
-          	      line-height: 26px;
-          	      color: #172c45;
-          }
-           .xinzuoyunshi p.xiangxi a{
-           	      color: #3c63a0;
-           }
-           .xinzuoyunshi p.xiangxi a:hover{
-                  color:#3c63a0;
-           }
-   /*banner 2 start*/
-           .banner2 .banner_left{
-             		float: left;
-                    width: 700px;
-             		height: 88px;
-             		background-color: #665432;
-             		background: url("images/Ot_D_20180314170312.png");
-             		cursor: pointer;
-             		margin-bottom: 12px;
-             		margin-top: 8px;
-             	}
-             	.banner2 .banner_right{
-             		float: left;
-             		width: 280px;
-             		height: 88px;
-             		background-color: #999;
-             	    margin-left: 20px;
-             		background: url("images/tencentsafe.png");
-             		cursor: pointer;
-             		margin-bottom: 12px;
-             		margin-top: 8px;
-             	}
- /*banner 3 start*/ 
-               .banner3 .banner_left{             		
-             	    width: 660px;             		
-             		background: url("images/660x90_0.jpg");		
-             	}
-             	.banner3 .banner_right{             		
-             		width: 320px;  
-             		background: url("images/Ot_D_20170607154556.png");    		
-             	}  
-             	.shipingbanner{
-             		background: url(images/18_11_03_9F6F0C3C.jpg);
-             	}          	
+		.nav .navinner {
+			margin: 0 auto;
+			width: 1000px;
+			background-color: #0994D3;
+			height: 65px;
+		}
 
-/*财政证券理财部分*/
-             	.contentlayout .contentModBig{
-             		float: left;
-             		width: 640px;
-             		border-top: 1px solid #6daaea;
-             		margin-right: 20px;
-             		  
-             	}
-             	.contentlayout .contentModBig1{
-                    margin-top: 15px;
-                    border: none;
-             	}
-             	.contentlayout .contentMod{
-             		width: 320px;
-             		height: 303px;
-             		border-top: 1px solid #6daaea;
-                    float:right;
-                    
-             	}
-             	.contentlayout .contentMod1{
-             		border:none;
-             	}
-             	.contentlayout ul{
-             		margin-top: 5px;
-             		float: left;
-             	}
-             	.contentlayout .contentModBig .content_left_left{
-             		float: left;
-             	}
-             	.contentlayout  .imageArea3{
-             		float: left;
-             	    padding-top: 17px;
-             	}
-             	.contentlayout  .imageArea3 img{
-             		float: left;
-             		width: 108px;
-             		height: 70px;
-             	}
-              	.contentlayout    .txtArea3{
-             		float: left;
-             		width: 182px;
-             		height:52px;
-             		padding: 17px 0px 10px 10px;
-             	}
-             	.contentlayout .contentModBig .mar_left{
-             		margin-right: 20px;
-             	}
-             	.contentlayout    .txtArea3 a{
-             		   line-height: 28px;
-             		   color: #3B63B7;
-             	}
-             	.contentlayout  .txtArea3 a:hover{
-             			text-decoration: underline;
-             			color: #3B63B7;
-             	}
-             	.contentlayout3 {
-                     width: 1000px;
-                     float: left;
-                     border-top: 1px solid #6daaea;
-                     margin-top: 15px;
-             	}
-             	.contentlayout3 .hd .hd_mid{
-                     margin-left: 160px;      
-             	}             		
-             	.contentlayout3   .imageArea3 img{
-             		 float: left;
-             		 width: 108px;
-             		 height: 70px;
-             	}
-               .contentlayout3    .txtArea3{
-              		 float: left;
-             		 width: 182px;
-             		 height:63px;
-             		 padding: 0px 0px 10px 10px;
-             	}
-             	.contentlayout3    .txtArea3 a{
-             		  line-height: 28px;
-             		  color: #3B63B7;
-             	}             	
-             	.contentlayout3 .content_left_left{
-             		  float: left;
-             		  width: 300px;
-             		  margin:15px 20px 0px 0px;
-             	}
-             	.contentlayout3 .content_left_right{
-             		 float: left;
-             		 width: 320px;
-             		 margin:15px 40px 0px 0px;
-             	}
-             	.contentlayout3 .contentMod_right{
-             		 float: left;
-             		 width: 320px;
-             		 margin-top: 15px;
-             	}
-             	div.shipingbanner{
-             		 width: 1000px;
-             		 height: 90px;
-             		 background-color: #defdde;
-             		 float: left;
-             		 margin:10px 0px;
-             	}
-             	.contentlayout4 {
-                     width: 1000px;
-                     float: left;
-                     margin-bottom: 20px;
-                                      
-             	}
-             .contentlayout4   .imageArea3 img{
-             		 float: left;
-             		 width: 108px;
-             		 height: 70px;
-             	}
-               .contentlayout4    .txtArea3{
-              		 float: left;
-             		 width: 182px;
-             		 height:50px;
-             		 padding: 17px 0px 10px 10px;
-             	}
-             	.contentlayout4 .content_left_left{
-             		 float: left;
-             		 width: 300px;
-             		 margin-right: 20px;
-             	}
-             	.contentlayout4 .content_left_right{
-             		 float: left;
-             		 width: 320px;             		
-             		 padding-top: 35px;
-             	}
-             	.contentlayout4 .contentMod_right{
-             		 float: left;
-             		 width: 320px;
-             		 border-top:1px solid #6daaea; 
-             	}
-             	.contentlayout4_left{
-             		border-top: 1px solid #6daaea;
-             		float: left;
-             		margin-right: 40px;
-                }
-                .contentlayout4 .contentMod_right5{
-             		border:none;
-             		margin-left:40px;
-             	}
+		.nav .navinner .navinin {
+			width: 958px;
+			height: 57px;
+			float: left;
+			padding-left: 15px;
+			padding-right: 15px;
+			margin-top: 10px;
+		}
 
-             	.contentlayout6_left{
-             		float: left;
-             		width: 320px;
-             		border-top: 1px solid #6daaea;
-             	}
-             	.contentlayout6_mid{
-             		float: left;
-             		margin: 0px 20px;
-             		width: 320px;
-             		border-top: 1px solid #6daaea;
-             	}
-             	.contentlayout6_right{
-             		float: left;
-             		width: 320px;
-             		border-top: 1px solid #6daaea;
-             	}
-             	 .contentlayout6  .imageArea3{
-             	 	margin-top: 15px;
-             	 }
-             	  .contentlayout6  .imageArea3 img{
-             		float: left;
-             		width: 108px;
-             		height: 70px;
-             	}
-               .contentlayout6    .txtArea3{
-              		float: left;
-             		width: 182px;
-             		height:50px;
-             		padding: 10px 10px 10px 10px;
-             	}
-             	.contentlayout6    .txtArea3 a{
-             	     line-height: 28px;
-             		 color: #3B63B7;
-             	}
-             	.contentlayout7 .contentlayout6_left{
-             		margin-top: 30px;
-             	}
-             	.contentlayout7 .contentlayout6_mid{
-             		margin-top: 30px;
-             	}
-             
-             	.contentlayout7 .contentlayout7_right{
-             		margin-top: 30px;
-             		float: left;
-             		width: 320px;
-             		height: 285px;
-             		background:url(images/5ae48cb8N3cbd395b.jpg);
-             	}
-                .contentlayout7 .contentlayout6_mid .imageArea .image{
-                	width: 60px;
-                	height: 84px;
-                	float:left;
-                	margin-right: 19PX;
-                  
-                 }
-                 .contentlayout7 .contentlayout6_mid .imageArea .image img{
-                 	width: 60px;
-                 	height: 60px
-                 	float:left;
-                 }
-                .yonghushequ{
-                	float:left;
-                }
-                .yonghushequ1{
-                	float:left;
-                	margin-top: 20px;
-                }
-                .contentlayout7 .contentlayout9_right{
-             		margin-top: 30px;
-             		float: left;
-             		width: 320px;
-             		height: 290px;
-             		background:url(images/yhjr.png) no-repeat;
-             		background-size: 320px 286px;
-             	}
-             
-             	.yonghushequ3{
-                	float:left;
-                	margin-top: 20px;
-                	padding-bottom: 10px;
-                	border-bottom: 1px solid #6daaea;
-                }
-                .contentlayoutend{
-                	float: left;
-                	width: 1000px;
-                	margin-top: 15px;
-                	border-top: 1px solid  #6daaea;
+		.nav .navinner .navinin div {
+			float: left;
+			padding-left: 16px;
+			width: 126px;
+			height: 25px;
+			font-size: 14px;
+			font-family: STHeiti, 'Simsun', 'Microsoft YaHei', arial;
+		}
 
-                }
-                .contentlayoutend .imageend{
-                	float: left;              	
-                    width: 160px;
-                    height: 120px;
-                    padding:8px 0px 30px 6px;
-                }
-              
-                .lastbanner{
-                	background: url(images/1000x90_0.jpg) no-repeat;
-                	width: 1000px;
-                	height: 90px;
-                	background-color: gray;
-                	float: left;
-                }
-                .contentlayoutend .imageend img{
-                 	width: 160px;
-                 	height: 100px;
-                 }
-                .contentlayoutend .imageend p{
-                  	text-align: center;
-                  	line-height: 28px;
-                  }
-                .footer a{
-                  	text-align: center;
-                  	line-height: 26px;
-                  	color:#515151;
-                  }
-                .footer{
-                    text-align: center;
-                  }
-                .footerNew{
-                    width: 1000px;                    
-                    float: left;
+		.navinner div a {
+			width: 29px;
+			padding-left: 1px;
+			float: left;
+			color: white;
+			text-decoration: none;
+			line-height: 22px;
+			margin-right: 0.8em;
+		}
 
-                }
-                .footerNew .footerNewInner{
-                   	width: 680px;                
-                   	height: 60px;
-                   	margin: 0 auto;
-                 }
-                .footerNew .footerNewInner div{
-                   	vertical-align: middle;
-                   	margin-right: 6px;
-                   	float: left;
-                   	width: 128px;
-                   	height: 52px;
-                    border: 1px solid #d2d2d2;
-                }
-                .footerNew .footerNewInner div.last{
-                    margin-right: none;                    	
-                }
-                .footerNew .footerNewInner div.last p{
-                    margin-top: 10px;
-                    margin-left: 56px;
-                    margin-right: 5px;
-                    text-anchor: center;                    	
-                }
-                .footerNew .footerNewInner  img{
-                    float:left;
-                    margin-top: 5px;
-                    padding-top:12px 50px 0px 0px;
-                }
-                .footerNew .footerNewInner  div.four img{ 
-                     margin-right:10px;           
-                     padding-top:0px;
-                     margin-top:0px;                      
-                 }
-                .footerNew .footerNewInner  div  span p{
-                     display: block;
-                     margin-left:55px;
-                     padding-top: 10px;
-                     vertical-align: center;                      
-                }
-                 span{
-                     color: #0872C6; 
-                 }                     
+		.navinner div a:link,
+		.navinner div a:actived {
+			color: white;
+			text-decoration: none;
+		}
 
+		.navinner div a:hover {
+			background-color: #fff;
+			color: navy;
+			text-decoration: none;
+			line-height: 22px;
+			margin-right: 0.8em;
+		}
 
+		.timezhou .erweima {
+			float: left;
+			width: 700px;
+			height: 74px;
+			background-color: #665432;
+			background: url("images/timezhou.jpg");
+			cursor: pointer;
+			margin-bottom: 12px;
+			margin-top: 12px;
+		}
 
-	</style>          	
-             	
+		.timezhou .service {
+			float: left;
+			width: 280px;
+			height: 74px;
+			background-color: #999;
+			margin-left: 20px;
+			background: url("images/tencentsafe.png");
+			cursor: pointer;
+			margin-bottom: 12px;
+			margin-top: 12px;
+		}
+
+		.timezhou a {
+			display: block;
+		}
+
+		.content_mainnews .layoutleft {
+			float: left;
+			width: 700px;
+			height: 970px;
+			margin-right: 20px;
+		}
+
+		.content_mainnews .mainnews {
+			float: left;
+			margin-right: 20px;
+			width: 350px;
+			height: 970px;
+		}
+
+		.content_mainnews .layoutright {
+			float: left;
+			width: 280px;
+			height: 970px;
+		}
+
+		.content_mainnews .content2 {
+			width: 350px;
+			height: 936px;
+			float: left;
+		}
+
+		.content_mainnews .leftAreas {
+			border-top: 1px solid #C6DFF0;
+		}
+
+		.content_mainnews .hd h2 {
+			font-size: 14px;
+			line-height: 34px;
+			text-indent: 1em;
+
+		}
+
+		.content_mainnews .hd h2 a:hover {
+			text-decoration: underline;
+		}
+
+		.content_mainnews ul {
+			list-style: none;
+		}
+
+		.content_mainnews li.bt a {
+			color: #3c63a0;
+			font-weight: bold;
+		}
+
+		.content_mainnews .hd h2 a {
+			color: #0872C6;
+			text-decoration: none;
+		}
+
+		.content_mainnews li.bt a:hover {
+			color: #E70002;
+			font-weight: bold;
+		}
+
+		.content_mainnews li {
+			line-height: 28px;
+			font-size: 14px;
+
+		}
+
+		.content_mainnews a {
+			color: #172c45;
+			text-decoration: none;
+		}
+
+		.content_mainnews a:hover {
+			color: red;
+			cursor: pointer;
+			text-decoration: underline;
+		}
+
+		.content_mainnews .content2 .imageArea {
+			float: left;
+			width: 108px;
+			height: 70px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+
+		.content_mainnews .content2 .txtarea {
+			float: left;
+			width: 208px;
+			height: 70px;
+			margin-left: 15px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+
+		.content_mainnews .content2 .txtarea a {
+			line-height: 28px;
+			color: #3b639f;
+		}
+
+		.content_mainnews a.sp {
+			padding-left: 18px;
+			background: url("images/iconNew.png") no-repeat 0px -47.5px;
+			line-height: 28px;
+		}
+
+		.content_mainnews .content2 .imageArea1 {
+			float: left;
+			width: 108px;
+			height: 70px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+
+		.content_mainnews .content2 .txtarea1 {
+			float: left;
+			width: 208px;
+			height: 70px;
+			margin-left: 15px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+
+		.content_mainnews .content2 .txtarea1 a {
+			line-height: 28px;
+			color: #3B63B7;
+		}
+
+		.content_mainnews .content2 .ul3 ul a.sp {
+			padding-left: 18px;
+			background: url("images/iconNew.png") no-repeat 0px -99px;
+			line-height: 28px;
+		}
+
+		.content_mainnews .topic {
+			width: 330px;
+			float: left;
+		}
+
+		.content2_m ul li.bt {
+			text-indent: 2em;
+		}
+
+		.content_mainnews .topic h2 {
+			font-size: 14px;
+			line-height: 34px;
+		}
+
+		.content_mainnews .topic a img {
+			float: right;
+			text-decoration: none;
+			padding-top: 5px;
+		}
+
+		.content_mainnews .topic .content2_m .ul1 {
+			padding-bottom: 16px;
+		}
+
+		.content_mainnews .topic .content2_m .rebotitle {
+			border-top: 1px solid #C6DFF0;
+			height: 32px;
+		}
+
+		.content_mainnews .topic .content2_m .rebotitle a {
+			display: block;
+			float: left;
+			line-height: 28px;
+			width: 86px;
+			text-align: center;
+			color: #0872C6;
+			height: 28px;
+		}
+
+		.content_mainnews .topic .content2_m .rebotitle a:hover {
+			border-top: 2px solid #001FFF;
+			line-height: 26px;
+		}
+
+		.content_mainnews .topic .content2_m .db {
+			float: left;
+			width: 310px;
+			height: 110px;
+			padding-right: 20px;
+			padding-top: 12px;
+		}
+
+		.content_mainnews .topic .content2_m .db p {
+			text-align: center;
+			display: block;
+			padding-top: 5px;
+		}
+
+		.content_mainnews .topic .content2_m .db .db_left {
+			float: left;
+			width: 145px;
+			height: 80px;
+		}
+
+		.content_mainnews .topic .content2_m .db .db_right {
+			float: right;
+			width: 145px;
+			height: 80px;
+		}
+
+		.content_mainnews .topic .content2_m .ul2 {
+			border-bottom: 1px solid #C6DFF0;
+			padding-bottom: 18px;
+		}
+
+		.content_mainnews .layoutright .productNav {
+			width: 238px;
+			height: 235px;
+			font-size: 14px;
+			font-family: arial;
+			border: 1px solid #d2e1f2;
+			border-top: none;
+			padding-right: 40px;
+			background: url(images/productNavBg1.5.516.png) no-repeat right -1px;
+		}
+
+		.lh28 {
+			line-height: 28px;
+		}
+
+		.w248 {
+			width: 238px;
+		}
+
+		.red {
+			color: #bd0a01 !important;
+		}
+
+		.content_mainnews .layoutright .productNav .product01 {
+			padding: 8px 0px 0px 10px;
+			height: 25px;
+			border-top: 1px solid #d2e1f1;
+		}
+
+		.content_mainnews .layoutright .productNav .product02 {
+			padding: 3px 0px 0px 10px;
+			height: 26px;
+			padding-top: 10px;
+			background: #f5f8fc;
+		}
+
+		.content_mainnews .layoutright .productNav .product03 {
+			padding: 4px 0px 0px 10px;
+			height: 56px;
+			padding-top: 10px;
+		}
+
+		.content_mainnews .layoutright .productNav .product04 {
+			padding: 4px 0px 0px 10px;
+			height: 57px;
+			background: #f5f8fc;
+		}
+
+		.content_mainnews .layoutright .productNav .product05 {
+			padding: 4px 0px 0px 10px;
+			height: 24px;
+		}
+
+		.content_mainnews .layoutright .productNav a {
+			color: #2b4c7e;
+			margin-right: 9px;
+		}
+
+		.content_mainnews .layoutright .sghz {
+			background: url(images/280x320_0.jpg) no-repeat;
+			width: 280px;
+			height: 337px;
+			margin: 22px 0px 0px 0px;
+		}
+
+		.content_mainnews .layoutright .zixuangu {
+			border: 1px solid #d2e1f1;
+			width: 278px;
+			height: 187px;
+			margin-top: 0px;
+		}
+
+		.content_mainnews .layoutright .xinzuoyunshi {
+			border: 1px solid #d2e1f1;
+			width: 278px;
+			height: 166px;
+			margin-top: 11px;
+		}
+
+		.zixuangu .hd {
+			width: 278px;
+			height: 35px;
+		}
+
+		.zixuangu .hd h2 {
+			float: left;
+			padding-right: 35px;
+		}
+
+		.financeSearch input {
+			border: 1px solid #d4d4d4;
+			border-right: 0;
+			color: #a0a0a0;
+			margin-top: 6px;
+			line-height: 19px;
+			width: 108px;
+			font-size: 12px;
+			float: left;
+		}
+
+		.financeSearch #search_btn {
+			background-position: -600px -160px;
+			border: 0;
+			margin: 0;
+			padding: 0;
+			height: 21px;
+			width: 35px;
+			float: left;
+			margin-top: 6px;
+			text-indent: -9999px;
+			cursor: pointer;
+			background: url(images/xwy.png) -599px -160px;
+		}
+
+		.financeTab {
+			padding: 13px 0px 13px 15px;
+
+		}
+
+		.zixuangu .financeTab li {
+			float: left;
+			width: 47px;
+			height: 22px;
+			line-height: 22px;
+			text-align: center;
+			border-right: 1px solid #dde7f2;
+			cursor: pointer;
+			overflow: hidden;
+		}
+
+		.zixuangu .financeTab li a {
+			color: #3b639f;
+		}
+
+		.zixuangu .financeTab li a:hover {
+			display: block;
+			color: white;
+			background-color: #458fce;
+			text-decoration: none;
+		}
+
+		.zixuangu .gushi {
+			padding: 20px 20px 0px;
+		}
+
+		.zixuangu .zoushitu {
+			float: left;
+			width: 140px;
+			height: 60px;
+		}
+
+		.zixuangu .zoushitu_R {
+			float: left;
+			padding: 0px 0px 15px 8px;
+
+		}
+
+		.gushi p.loginzixuangu a {
+			width: 100%;
+			display: block;
+
+		}
+
+		.zixuangu .zoushitu_R .price {
+			color: #41a98d;
+			font: bold 20px/38px Tahoma;
+		}
+
+		.zixuangu .zoushitu_R .s {
+			color: #41a98d;
+			font: normal 12px/12px Tahoma;
+		}
+
+		.zixuangu .zoushitu a img {
+			width: 140px;
+			height: 70px;
+			border: 1px solid #d2e0ef;
+			border-left: none;
+			border-bottom: none;
+		}
+
+		.xinzuoyunshi .xinzuochaxun .imgxz {
+			background: url(images/astroIcon.png) no-repeat 0px -50px;
+			width: 50px;
+			height: 50px;
+			float: left;
+			margin-left: 20px;
+			margin-right: 10px;
+		}
+
+		.xinzuoyunshi .todayyunshi {
+			float: left;
+			padding-top: 10px;
+		}
+
+		.xinzuochaxun p.xiangxi {
+			padding: 5px 10px;
+			width: 240px;
+
+		}
+
+		.xinzuoyunshi .yunshixin {
+			width: 64px;
+			margin-top: 10px;
+			float: left;
+			height: 15px;
+			background: url(images/yunshi.png) no-repeat 0px -27px;
+		}
+
+		.xinzuochaxun {
+			overflow: hidden;
+		}
+
+		.xinzuoyunshi p.xiangxi {
+			width: 240px;
+			height: 82px;
+			padding-left: 20px;
+			line-height: 26px;
+			color: #172c45;
+		}
+
+		.xinzuoyunshi p.xiangxi a {
+			color: #3c63a0;
+		}
+
+		.xinzuoyunshi p.xiangxi a:hover {
+			color: #3c63a0;
+		}
+
+		/*banner 2 start*/
+		.banner2 .banner_left {
+			float: left;
+			width: 700px;
+			height: 88px;
+			background-color: #665432;
+			background: url("images/Ot_D_20180314170312.png");
+			cursor: pointer;
+			margin-bottom: 12px;
+			margin-top: 8px;
+		}
+
+		.banner2 .banner_right {
+			float: left;
+			width: 280px;
+			height: 88px;
+			background-color: #999;
+			margin-left: 20px;
+			background: url("images/tencentsafe.png");
+			cursor: pointer;
+			margin-bottom: 12px;
+			margin-top: 8px;
+		}
+
+		/*banner 3 start*/
+		.banner3 .banner_left {
+			width: 660px;
+			background: url("images/660x90_0.jpg");
+		}
+
+		.banner3 .banner_right {
+			width: 320px;
+			background: url("images/Ot_D_20170607154556.png");
+		}
+
+		.shipingbanner {
+			background: url(images/18_11_03_9F6F0C3C.jpg);
+		}
+
+		/*财政证券理财部分*/
+		.contentlayout .contentModBig {
+			float: left;
+			width: 640px;
+			border-top: 1px solid #6daaea;
+			margin-right: 20px;
+
+		}
+
+		.contentlayout .contentModBig1 {
+			margin-top: 15px;
+			border: none;
+		}
+
+		.contentlayout .contentMod {
+			width: 320px;
+			height: 303px;
+			border-top: 1px solid #6daaea;
+			float: right;
+
+		}
+
+		.contentlayout .contentMod1 {
+			border: none;
+		}
+
+		.contentlayout ul {
+			margin-top: 5px;
+			float: left;
+		}
+
+		.contentlayout .contentModBig .content_left_left {
+			float: left;
+		}
+
+		.contentlayout .imageArea3 {
+			float: left;
+			padding-top: 17px;
+		}
+
+		.contentlayout .imageArea3 img {
+			float: left;
+			width: 108px;
+			height: 70px;
+		}
+
+		.contentlayout .txtArea3 {
+			float: left;
+			width: 182px;
+			height: 52px;
+			padding: 17px 0px 10px 10px;
+		}
+
+		.contentlayout .contentModBig .mar_left {
+			margin-right: 20px;
+		}
+
+		.contentlayout .txtArea3 a {
+			line-height: 28px;
+			color: #3B63B7;
+		}
+
+		.contentlayout .txtArea3 a:hover {
+			text-decoration: underline;
+			color: #3B63B7;
+		}
+
+		.contentlayout3 {
+			width: 1000px;
+			float: left;
+			border-top: 1px solid #6daaea;
+			margin-top: 15px;
+		}
+
+		.contentlayout3 .hd .hd_mid {
+			margin-left: 160px;
+		}
+
+		.contentlayout3 .imageArea3 img {
+			float: left;
+			width: 108px;
+			height: 70px;
+		}
+
+		.contentlayout3 .txtArea3 {
+			float: left;
+			width: 182px;
+			height: 63px;
+			padding: 0px 0px 10px 10px;
+		}
+
+		.contentlayout3 .txtArea3 a {
+			line-height: 28px;
+			color: #3B63B7;
+		}
+
+		.contentlayout3 .content_left_left {
+			float: left;
+			width: 300px;
+			margin: 15px 20px 0px 0px;
+		}
+
+		.contentlayout3 .content_left_right {
+			float: left;
+			width: 320px;
+			margin: 15px 40px 0px 0px;
+		}
+
+		.contentlayout3 .contentMod_right {
+			float: left;
+			width: 320px;
+			margin-top: 15px;
+		}
+
+		div.shipingbanner {
+			width: 1000px;
+			height: 90px;
+			background-color: #defdde;
+			float: left;
+			margin: 10px 0px;
+		}
+
+		.contentlayout4 {
+			width: 1000px;
+			float: left;
+			margin-bottom: 20px;
+
+		}
+
+		.contentlayout4 .imageArea3 img {
+			float: left;
+			width: 108px;
+			height: 70px;
+		}
+
+		.contentlayout4 .txtArea3 {
+			float: left;
+			width: 182px;
+			height: 50px;
+			padding: 17px 0px 10px 10px;
+		}
+
+		.contentlayout4 .content_left_left {
+			float: left;
+			width: 300px;
+			margin-right: 20px;
+		}
+
+		.contentlayout4 .content_left_right {
+			float: left;
+			width: 320px;
+			padding-top: 35px;
+		}
+
+		.contentlayout4 .contentMod_right {
+			float: left;
+			width: 320px;
+			border-top: 1px solid #6daaea;
+		}
+
+		.contentlayout4_left {
+			border-top: 1px solid #6daaea;
+			float: left;
+			margin-right: 40px;
+		}
+
+		.contentlayout4 .contentMod_right5 {
+			border: none;
+			margin-left: 40px;
+		}
+
+		.contentlayout6_left {
+			float: left;
+			width: 320px;
+			border-top: 1px solid #6daaea;
+		}
+
+		.contentlayout6_mid {
+			float: left;
+			margin: 0px 20px;
+			width: 320px;
+			border-top: 1px solid #6daaea;
+		}
+
+		.contentlayout6_right {
+			float: left;
+			width: 320px;
+			border-top: 1px solid #6daaea;
+		}
+
+		.contentlayout6 .imageArea3 {
+			margin-top: 15px;
+		}
+
+		.contentlayout6 .imageArea3 img {
+			float: left;
+			width: 108px;
+			height: 70px;
+		}
+
+		.contentlayout6 .txtArea3 {
+			float: left;
+			width: 182px;
+			height: 50px;
+			padding: 10px 10px 10px 10px;
+		}
+
+		.contentlayout6 .txtArea3 a {
+			line-height: 28px;
+			color: #3B63B7;
+		}
+
+		.contentlayout7 .contentlayout6_left {
+			margin-top: 30px;
+		}
+
+		.contentlayout7 .contentlayout6_mid {
+			margin-top: 30px;
+		}
+
+		.contentlayout7 .contentlayout7_right {
+			margin-top: 30px;
+			float: left;
+			width: 320px;
+			height: 285px;
+			background: url(images/5ae48cb8N3cbd395b.jpg);
+		}
+
+		.contentlayout7 .contentlayout6_mid .imageArea .image {
+			width: 60px;
+			height: 84px;
+			float: left;
+			margin-right: 19PX;
+
+		}
+
+		.contentlayout7 .contentlayout6_mid .imageArea .image img {
+			width: 60px;
+			height: 60px float:left;
+		}
+
+		.yonghushequ {
+			float: left;
+		}
+
+		.yonghushequ1 {
+			float: left;
+			margin-top: 20px;
+		}
+
+		.contentlayout7 .contentlayout9_right {
+			margin-top: 30px;
+			float: left;
+			width: 320px;
+			height: 290px;
+			background: url(images/yhjr.png) no-repeat;
+			background-size: 320px 286px;
+		}
+
+		.yonghushequ3 {
+			float: left;
+			margin-top: 20px;
+			padding-bottom: 10px;
+			border-bottom: 1px solid #6daaea;
+		}
+
+		.contentlayoutend {
+			float: left;
+			width: 1000px;
+			margin-top: 15px;
+			border-top: 1px solid #6daaea;
+
+		}
+
+		.contentlayoutend .imageend {
+			float: left;
+			width: 160px;
+			height: 120px;
+			padding: 8px 0px 30px 6px;
+		}
+
+		.lastbanner {
+			background: url(images/1000x90_0.jpg) no-repeat;
+			width: 1000px;
+			height: 90px;
+			background-color: gray;
+			float: left;
+		}
+
+		.contentlayoutend .imageend img {
+			width: 160px;
+			height: 100px;
+		}
+
+		.contentlayoutend .imageend p {
+			text-align: center;
+			line-height: 28px;
+		}
+
+		.footer a {
+			text-align: center;
+			line-height: 26px;
+			color: #515151;
+		}
+
+		.footer {
+			text-align: center;
+		}
+
+		.footerNew {
+			width: 1000px;
+			float: left;
+
+		}
+
+		.footerNew .footerNewInner {
+			width: 680px;
+			height: 60px;
+			margin: 0 auto;
+		}
+
+		.footerNew .footerNewInner div {
+			vertical-align: middle;
+			margin-right: 6px;
+			float: left;
+			width: 128px;
+			height: 52px;
+			border: 1px solid #d2d2d2;
+		}
+
+		.footerNew .footerNewInner div.last {
+			margin-right: none;
+		}
+
+		.footerNew .footerNewInner div.last p {
+			margin-top: 10px;
+			margin-left: 56px;
+			margin-right: 5px;
+			text-anchor: center;
+		}
+
+		.footerNew .footerNewInner img {
+			float: left;
+			margin-top: 5px;
+			padding-top: 12px 50px 0px 0px;
+		}
+
+		.footerNew .footerNewInner div.four img {
+			margin-right: 10px;
+			padding-top: 0px;
+			margin-top: 0px;
+		}
+
+		.footerNew .footerNewInner div span p {
+			display: block;
+			margin-left: 55px;
+			padding-top: 10px;
+			vertical-align: center;
+		}
+
+		span {
+			color: #0872C6;
+		}
+	</style>
+
 </head>
 
 
 
 <body>
-<!-- 搜索及logo开始 -->
+	<!-- 搜索及logo开始 -->
 	<div class="header inner">
 		<div class="logo">
 			<img src="images/logo.png" alt="腾讯logo" />
 		</div>
 		<div class="sosuo">
-			<div class="sosuokuang" >
+			<div class="sosuokuang">
 				<div class="sousuowangye">
-				<select class="selectbutton" name="sosuo" id="">
-					<option value="网页">网页</option>
-					<option value="新闻">新闻</option>
-					<option value="视频">视频</option>
-					<option value="生活">生活</option>
-					<option value="娱乐">娱乐</option>
-				</select>
+					<select class="selectbutton" name="sosuo" id="">
+						<option value="网页">网页</option>
+						<option value="新闻">新闻</option>
+						<option value="视频">视频</option>
+						<option value="生活">生活</option>
+						<option value="娱乐">娱乐</option>
+					</select>
 				</div>
 				<div class="input">
 					<input type="text" />
 					<div class="s"><img src="images/s.png" alt="" /></div>
 				</div>
-			
+
 			</div>
 		</div>
 		<div class="searchbut">
@@ -948,1253 +1104,1276 @@
 		</div>
 		<div class="zoneIcon"><a class="zone" href=""></a></div>
 		<div class="mailIcon"><a class="mail” href=""></a></div>
-		<div class="loginIcon"><a class="login" href=""></a></div>
-    </div>
-
-    <div class="c1"></div>
-<!-- 导航nav start -->
-    <div class="nav">
-    	<div class="navinner">
-    		<div class="navinin">
-    		<div>
-    			<strong><a href=""> 新闻</strong></a>
-    		    <a href="">图片</a>
-    		    <a href="">军事</a></div>
-    		<div>
-    			<strong><a href="">视频</strong></a>
-    		    <a href="">热剧</a>
-    		    <a href="">综艺</a></div>
-    		<div>
-    			<strong><a href="">娱乐</strong></a>
-    		    <a href="">明星</a>
-    		    <a href="">电影</a>
-    		</div>
-    		<div>
-    			<strong><a href="">汽车</strong></a>
-    		    <a href="">车型</a>
-    		    <a href="">购物</a>
-    		</div>
-    		<div>
-    			<strong><a href="">科技</strong></a>
-    		    <a href="">数码</a>
-    		    <a href="">手机</a></div>
-    		<div>
-    			<strong><a href="">教育</strong></a>
-    		    <a href="">课程</a>
-    		    <a href="">出国</a>
-    		</div>
-    		<div class="rightend" style="width: 84px">
-    			<strong><a href="">公益</strong></a>
-    		    <a href="">佛学</a>
-       	    </div>
-
-    		<div>
-    			<strong><a href="">财经</strong></a>
-    		    <a href="">证券</a>
-    		    <a href="">理财</a>
-    	    </div>
-    		<div>
-    			<strong><a href="">体育</strong></a>
-    		    <a href="">NBA</a>
-    		    <a href="">CBA</a>
-    	    </div>
-    		<div>
-    			<strong><a href="">时尚</strong></a>
-    		    <a href="">健康</a>
-    		    <a href="">育儿</a>
-    	    </div>
-    		<div>
-    			<strong><a href="">房产</strong></a>
-    		    <a href="">家居</a>
-    		    <a href="">家电</a></div>
-    		<div>
-    		    <strong><a href="">游戏</strong></a>
-    		    <a href="">儿童</a>
-    		    <a href="">星座</a>
-    		</div>
-    		<div>
-    			<strong><a href="">文化</strong></a>
-    		    <a href="">大家</a>
-    		    <a href="">文学</a>
-    		</div>
-    		<div class="rightend" style="width: 84px">
-    			<strong><a href="">拍客</strong></a>
-    		    <a href="">更多</a>
-    		    </div>
-       		</div>
-    	</div>    	
-    </div>
-<!-- 导航ending -->
-
-
-<!-- banner1 start -->
-    <div class="timezhou inner">
-      	<a href="http//time.qq.com"><div class="erweima"></div></a>
-      	<a href="http//110.qq.com" target="_blank" title="腾讯安全服务平台"><div class="service"></div></a>
-    </div>  
-<!-- banner1 end -->
-
-<!-- 要闻 今日话题 产品导航 财经 体育 大家爱看 start -->
-    <div class="content_mainnews   inner">
-    	<div class="layoutleft">
-    	<div class="leftAreas mainnews">
-    		<div class="hd">
-    			<h2>
-    				<a href="#">要闻</a>
-    			</h2>
-    		</div>
-    		<div class="content2">
-    			<div class="ul1">
-    				<ul>
-    					<li class="bt"><a href="">习近平主持召开升入推动长江经济带发展座谈会</a></li>
-    					<li><a href="">习近平总书记湖北之行第三天</a></li>
-    					<li><a href="">这几天在湖北湖南考察 总书记最关心的是生态修复</a></li>
-    					<li><a href="">习近平总书记考察长江 勉励大家守护好一江碧水</a></li>
-    					<li><a href="">信息基础设施安全是“正确的网络安全观”的保障</a></li>
-    					<li><a href="">从马克思主义哲学视角深刻认识新思想 </a><a href="">读懂马克思</a></li>
-    					<li><a href="">长征十一号火箭“一箭五星”</a></li>
-    					<li><a href="">今年一季度就业形势继续保持稳中向好</a></li>
-    				</ul>
-    			</div>
-    		    <div class="imageArea">
-    				<a href=""><img src="images/hunzhaji.jpg" alt="" /></a>
-    		    </div>
-    		    <div class="txtarea">
-    				<h3><a href="">美军承认出动B-52轰炸机“靠近中国南海”地区</a></h3>
-    		    </div>
-
-                <div class="ul2">
-              	 <ul>
-              		<li><a href="" class="sp">NBA季后赛-字母歌31+14 雄鹿胜绿军拖入七枪</a></li>
-              		<li><a href="" class="sp">朱婷帅瓦基弗夺土超女排冠军  刘洋收货大满贯</a></li>
-              		<li><a href="">金正恩和文在寅在三八线附件中暑 起源半岛和平</a></li>
-              		<li><a href="">英烈保护法通过！宣扬、梅花侵略战争将被追责</a></li>
-              		<li><a href="">磨迪来了！这一次，他想从中国“带走”什么？</a></li>
-              		<li><a href="">人社部：截止三月底 3066.5亿养老金已开始投资</a></li>
-              		<li><a href="">中纪委机关报：对极少数人的通报是对多数人的关爱</a></li>
-              		<li><a href="">美国公司涉嫌侵犯中国芯片设备 在上海被海关扣下</a></li>
-              	  </ul>
-                 </div> 
-                 <div class="imageArea1">
-    				<a href=""><img src="images/shenyao.jpg" alt="" /></a>
-    		     </div>
-    		     <div class="txtarea1">
-    				<h3><a href="">"神药"事件后的莎普爱思：市值蒸发16亿</a></h3>
-    		     </div> 
-    			 <div class="ul3">
-              	 <ul>
-              		<li><a href="" >NBA季后赛-字母歌31+14 雄鹿胜绿军拖入七枪</a></li>
-              		<li><a href="" >朱婷帅瓦基弗夺土超女排冠军  刘洋收货大满贯</a></li>
-              		<li><a href="">金正恩和文在寅在三八线附件中暑 起源半岛和平</a></li>
-              		<li><a href="">英烈保护法通过！宣扬、梅花侵略战争将被追责</a></li>
-              		<li><a href="">磨迪来了！这一次，他想从中国“带走”什么？</a></li>
-              		<li><a href="" class="sp">人社部：截止三月底 3066.5亿养老金已开始投资</a></li>
-              		<li><a href="">中纪委机关报：对极少数人的通报是对多数人的关爱</a></li>
-              		<li><a href="">美国公司涉嫌侵犯中国芯片设备 在上海被海关扣下</a></li>
-              		<li><a href="">人社部：截止三月底 3066.5亿养老金已开始投资</a></li>
-              		<li><a href="">中纪委机关报：对极少数人的通报是对多数人的关爱</a></li>
-              		<li><a href="">美国公司涉嫌侵犯中国芯片设备 在上海被海关扣下</a></li>
-              	  </ul>
-                 </div> 
-    		</div>
-       	</div>
-<!-- 今日话题 时光轴 start -->
-    	<div class="leftAreas topic">
-    		<div class="hd">
-    			<h2>
-    				<a href="#">今日话题</a> <a href=""><img src="images/timeqq.png" alt="" /></a>
-    			</h2>
-    		</div>
-    		<div class="content2_m">
-    			<div class="ul1">
-    			   <ul>
-    			   	<li class="bt"> <a href=""> 于正抄袭法院都判完了，就不道歉怎么办？</a></li>
-    			   	<li> <a href="">“每月给女职工法50元卫生费”，好心可能办坏事</a></li>
-    			   	<li> <a href="">何必急着推翻“史上最真诚的高校招聘启事”</a></li>
-    			   	<li> <a href="">办护照只跑一次”，便民按下“快捷键”</a></li>
-    			   	<li> <a href="">扶梯减少1度倾斜，行人增加1分安全</a></li>
-    			   	<li> <a href="">旅行团不接刀急着，掩耳就能盗铃？</a></li>
-    			   	<li> <a href="">警察局“副局长太大”辱骂掌掴，不能忍更不必忍</a></li>
-    			   </ul>
-    			</div>
-    			<div class="ul2">
-    				<div class="rebotitle">
-    					<h2><a href="">今日热播</a>
-    					<a href="">影视剧</a>
-    					<a href="">综艺</a></h2>
-    				</div>
-    				<div class="db">
-    					<div class="db_left">
-    						<img src="images/huangzitao.jpg" alt="" />
-    						<p><a href="">黄子韬严厉点评：没本</a></p>
-    					</div>
-    					<div class="db_right">
-    						<img src="images/luhan.jpg" alt="" />
-    						<p><a href="">鹿晗跑圈狂喊：我好帅</a></p>
-    					</div>
-    				</div>
-    				<ul>
-    						<li><a href="" class="sp">外交部发言人引用诗句回应</a></li>
-    				        <li><a href="" class="sp">五一假期将至，这份最全出现安全指南请收好！</a></li>
-    				        <li><a href="" class="sp">微信退出神秘黑科技，扫一扫就能识别花草植物</a></li>
-    				        <li><a href="" class="sp">央视主播再出段子</a><a href=""> 这一家四口都是网红主播</a></li>
-    				        <li><a href="" class="sp">闪电侠韦德季后赛五佳球 </a><a href=""> 四岁萌娃挑战闯关游戏</a></li>
-    				        <li><a href="" class="sp">老板《水浒传》演员再聚首</a><a href=""> 盘点90后高校回忆</a></li>
-       			
-    				</ul>
-    			</div>
-    			<div class="ul3">
-    			    <div class="hd">
-    			      <h2>
-    				    <a href="#">今日图话</a> <a href=""></a>
-    			      </h2>
-    		         </div>
-    		         <div class="db">
-    					<div class="db_left">
-    						<img src="images/jrth_left.jpg" alt="" />
-    						<p><a href="">唱70多年评剧要开演唱</a></p>
-    					</div>
-    					<div class="db_right">
-    						<img src="images/jrth_r.jpg" alt="" />
-    						<p><a href="">明星宠物过头惹非议</a></p>
-    					</div>
-    				</div>
-    				<ul>
-    					<li><a href="">藏宝图</a> | <a href="">史上最高画作将上拍  这幅裸女贵在何处</a> </li>
-    					<li><a href="">体坛</a> | <a href="">郎平惠若琪出席活动  全程热聊心情大好</a></li>
-    					<li><a href="">入流</a> | <a href="">为什么我们还是如此痴迷米兰设计周？</a></li>
-    					<li><a href="">尤物</a> | <a href="">杨幂剪了新发型新刘海，秒变19岁少女</a></li>
-    					<li><a href="">车族</a> | <a href="">为什么宁愿热出汗  老司机也不开空调</a></li>
-    					<li><a href="">谷雨</a> | <a href="">变性后的liutin，想谈一次恋爱</a></li>
-    					<li><a href="">谷雨</a> | <a href="">寻子21年，郭刚堂任在路上</a></li>
-    					<li><a href="">益视频</a> | <a href="">“行为公益”时代到来，腾讯公益刷新玩法</a></li>
-    					
-    				</ul>
-    			</div>    			  				
-    		</div>
-    	</div>
-<!-- 今日话题 时光轴 end -->
-        </div>
-     
- <div class="layoutright">
- <!-- 右侧导航开始-->             
-    	<div class="productNav">
-    		   <div class="product01 lh28 w248">
-    		   	     <a href="">QQ</a>
-    		   	     <a href="">邮箱</a>
-    		   	     <a href="">会员</a>
-    		   	     <a href="" class="red">电脑管家</a>
-    		   	     <a href="">软件</a>
-    		   </div>
-    		   <div class="product02 lh28 w248">
-    		   	     <a href="">微信</a>
-    		   	     <a href="">空间</a>
-    		   	     <a href="">课堂</a>
-    		   	     <a href="">视频VIP</a>
-    		   	     <a href="">腾讯云</a>
-    		   </div>
-    		   <div class="product03 lh28 w248">
-    		   	    <a href="" class="red">新闻APP</a>
-    		   	    <a href="">体育APP</a>
-    		   	    <a href="">快报</a>
-    		   	    <a href="">企鹅号</a>
-    		   	    <a href="">视频</a>
-    		   	    <a href="">手机管家</a>
-    		   	    <a href="">浏览器</a>
-    		   	    <a href="">应用宝</a>
-       		   </div>
-               <div class="product04 lh28 w248">
-               	     <a href="">LOL</a>
-               	     <a href="">DNF</a>
-               	     <a href="">CF</a>
-               	     <a href="">冒险岛2</a>
-               	     <a href="">QQ炫舞</a>
-               	     <a href="">爱玩</a>
-               	     <a href="">逆战</a>
-               	     <a href="">天刀</a>
-               	     <a href="">火影OL</a>
-               	     <a href="">王者</a>
-               </div>
-               <div class="product05 lh28 w248">
-               	     <a href="">京东</a>
-               	     <a href="">理财通</a>
-               	     <a href="">企鹅FM</a>
-               	     <a href="">Q币</a>
-               	     <a href="">全部</a>
-               </div>
-                	
-         </div>      
- <!-- 右侧导航结束-->
-
-    	  <div class="sghz">
-    	               <a href="" class="time"></a>
-          </div>
-
-<!-- 市场行情 -->
-         <div class="zixuangu">
-         	<div class="hd">
-    			<h2>
-    				<a href="#">市场行情</a>
-    			</h2>
-    		
-    			<div class="financeSearch">
-    				<form action="">
-    					<input type="text" />
-    					<input type="button" id="search_btn" value="s" />
-    				</form>
-    			</div>
-            </div>
-            <div class="financeTab">
-            	<ul>
-            		<li><a href="">上证</a></li>
-            		<li><a href="">恒指</a></li>
-            		<li><a href="">道指</a></li>
-            		<li><a href="">腾安</a></li>
-            		
-            	</ul>
-            </div>
-         <div class="gushi">
-            <div class="zoushitu">
-            	<a href=""><img src="images/hq_img.png" alt="" /></a>
-            </div>
-            <div class="zoushitu_R">
-                 <p><a href="">道琼斯</a></p>
-                 <dd class="price"> 2295.59</dd>
-                 <dd class="s">+1.84 +0.08%</dd>
-             </div>  
-             <p class="loginzixuangu"><a href="">[登录自选股]查看我的股票走势</a></p> 
-           </div> 
-            
-         </div>
-
- <!--星座运势  -->
-         <div class="xinzuoyunshi">
-         	<div class="hd">
-    			<h2>
-    				<a href="#">星座运势</a>
-    			</h2>
-             </div>
-             <div class="xinzuochaxun">
-             	<div class="imgxz">
-             		
-             	</div>
-             	<div class="selected_yunshi">
-             		<select name="" id="">
-             			<option value="">金牛座（04.20-05.20）</option>
-             			<option value="">白羊座（03.21-04.19）</option>
-             			<option value="">双子座（05.21-06.21）</option>
-             			<option value="">巨蟹座（06.22-07.22）</option>
-             		</select>
-             		<div class="todayyunshi">
-             			<p>今日运势：</p>
-             		</div>
-             		
-             		<div class="yunshixin">
-             			
-             		</div>
-             	</div>
-
-             </div>
-             <p class="xiangxi">今天是自信而又快乐的一天，在工作上也会表现良好。去体验绘画，音乐这样快乐的事情。去好好的展……<a href="">[详细]</a></p>
-        </div>
-
-   </div>   
- <!-- 要闻 今日话题 产品导航 财经 体育 大家爱看 end --> 
-
- <!-- banner2 start -->
-    <div class="banner2 inner">
-      	<a href="http//time.qq.com"><div class="banner_left"></div></a>
-      	<a href="http//110.qq.com" target="_blank" title="腾讯安全服务平台"><div class="banner_right"></div></a>
-    </div>  
-<!-- banner2 end -->
-
-<div class="contentlayout">
-	<!-- 个性化通栏一start -->
-	<div class="contentModBig">
-		   <div class="hd">
-			 <h2><a href="">财经</a><span>/</span>
-                <a href="">证券</a><span>/</span>
-                <a href="">理财</a>  
-			 </h2>
-		    </div>
-		    <div class="contentModBig_left">
-		    	<div class="content_left_left">
-		         <div class="imageArea3">
-    				<a href=""><img src="images/0.jpg" alt="" /></a>
-    		     </div>
-    		     <div class="txtArea3 mar_left">
-    				<h3><a href="">29省公布一季度经济数据：GDP增速贵州第1天津垫底</a></h3>
-    		     </div> 
-    		      <div>
-    		     	<ul>
-    		     		<li><a href="">大众全新OC首发亮相  家族颜值担当</a></li>
-    		     		<li><a href="">小伙10万入手01年的路虎揽胜，网友：加油站附...</a></li>
-    		     		<li><a href="">实测：这几款20万左右的新款SUV，用料到底...</a></li>
-    		     		<li><a href=""> 黄健翔都没见过的人车大战，千万不能错过！</a></li>
-    		     		<li><a href="">蔚来已来|2018北京车展蔚来发布会</a></li>
-    		     		<li><a href="">雪佛兰万元补贴等你来抢  堵车时候手动挡跟车累吗</a></li>
-    		     	</ul>
-    		     </div>
-    		     </div>
-
-    		  <div class="content_left_right">
-    		      <div class="imageArea3">
-    				<a href=""><img src="images/0 (1).jpg" alt="" /></a>
-    		      </div>
-    		      <div class="txtArea3">
-    				<h3><a href="">薪资新规过渡期延长至2020年底  利好 股市2</a></h3>
-    		      </div><div>
-    		     	<ul>
-    		     		<li><a href="">大众全新OC首发亮相  家族颜值担当</a></li>
-    		     		<li><a href="">小伙10万入手01年的路虎揽胜，网友：加油站附...</a></li>
-    		     		<li><a href="">实测：这几款20万左右的新款SUV，用料到底...</a></li>
-    		     		<li><a href=""> 黄健翔都没见过的人车大战，千万不能错过！</a></li>
-    		     		<li><a href="">蔚来已来|2018北京车展蔚来发布会</a></li>
-    		     		<li><a href="">雪佛兰万元补贴等你来抢  堵车时候手动挡跟车累吗</a></li>
-    		     	</ul>
-    		     </div>
-
-              </div>
-    	    </div>
+		<div class=" loginIcon"><a class="login" href=""></a></div>
 	</div>
 
+	<div class="c1"></div>
+	<!-- 导航nav start -->
+	<div class="nav">
+		<div class="navinner">
+			<div class="navinin">
+				<div>
+					<strong><a href=""> 新闻</strong></a>
+					<a href="">图片</a>
+					<a href="">军事</a></div>
+				<div>
+					<strong><a href="">视频</strong></a>
+					<a href="">热剧</a>
+					<a href="">综艺</a></div>
+				<div>
+					<strong><a href="">娱乐</strong></a>
+					<a href="">明星</a>
+					<a href="">电影</a>
+				</div>
+				<div>
+					<strong><a href="">汽车</strong></a>
+					<a href="">车型</a>
+					<a href="">购物</a>
+				</div>
+				<div>
+					<strong><a href="">科技</strong></a>
+					<a href="">数码</a>
+					<a href="">手机</a></div>
+				<div>
+					<strong><a href="">教育</strong></a>
+					<a href="">课程</a>
+					<a href="">出国</a>
+				</div>
+				<div class="rightend" style="width: 84px">
+					<strong><a href="">公益</strong></a>
+					<a href="">佛学</a>
+				</div>
 
-	<div class="contentMod">
-		  <div class="hd">
-			 <h2><a href="">汽车</a><span>/</span>
-                <a href="">在线购车</a>
-			 </h2>
-		    </div>
-		    <div class="contentMod_right">
-		         <div class="imageArea3">
-    				<a href=""><img src="images/146871091_small.jpg" alt="" /></a>
-    		     </div>
-    		     <div class="txtArea3 mar_left">
-    				<h3><a href="">比颜值拼实惠  十万起步的合资品质SUV</a></h3>
-    		     </div> 
-    		     <div>
-    		     	<ul>
-    		     		<li><a href="">大众全新OC首发亮相  家族颜值担当</a></li>
-    		     		<li><a href="">小伙10万入手01年的路虎揽胜，网友：加油站附...</a></li>
-    		     		<li><a href="">实测：这几款20万左右的新款SUV，用料到底...</a></li>
-    		     		<li><a href=""> 黄健翔都没见过的人车大战，千万不能错过！</a></li>
-    		     		<li><a href="">蔚来已来|2018北京车展蔚来发布会</a></li>
-    		     		<li><a href="">雪佛兰万元补贴等你来抢  堵车时候手动挡跟车累吗</a></li>
-    		     	</ul>
-    		     </div>
-    		</div>     
+				<div>
+					<strong><a href="">财经</strong></a>
+					<a href="">证券</a>
+					<a href="">理财</a>
+				</div>
+				<div>
+					<strong><a href="">体育</strong></a>
+					<a href="">NBA</a>
+					<a href="">CBA</a>
+				</div>
+				<div>
+					<strong><a href="">时尚</strong></a>
+					<a href="">健康</a>
+					<a href="">育儿</a>
+				</div>
+				<div>
+					<strong><a href="">房产</strong></a>
+					<a href="">家居</a>
+					<a href="">家电</a></div>
+				<div>
+					<strong><a href="">游戏</strong></a>
+					<a href="">儿童</a>
+					<a href="">星座</a>
+				</div>
+				<div>
+					<strong><a href="">文化</strong></a>
+					<a href="">大家</a>
+					<a href="">文学</a>
+				</div>
+				<div class="rightend" style="width: 84px">
+					<strong><a href="">拍客</strong></a>
+					<a href="">更多</a>
+				</div>
+			</div>
+		</div>
 	</div>
-	<!-- 个性化通栏一end -->
-</div>
+	<!-- 导航ending -->
 
 
-
-<div class="contentlayout">
-	<!-- 个性化通栏2start -->
-	<div class="contentModBig contentModBig1">
-		   <div class="hd">
-			 <h2><a href="">体育</a><span>/</span>
-                <a href="">NBA</a><span>/</span>
-                <a href="">英超</a><span>/</span>
-                <a href="">搏击</a>  
-			 </h2>
-		    </div>
-		    <div class="contentModBig_left">
-		    	<div class="content_left_left">
-		         <div class="imageArea3">
-    				<a href=""><img src="images/147858259.jpg" alt="" /></a>
-    		     </div>
-    		     <div class="txtArea3 mar_left">
-    				<h3><a href="">29省公布一季度经济数据：GDP增速贵州第1天津垫底</a></h3>
-    		     </div> 
-    		      <div>
-    		     	<ul>
-    		     		<li><a href="">大众全新OC首发亮相  家族颜值担当</a></li>
-    		     		<li><a href="">小伙10万入手01年的路虎揽胜，网友：加油站附...</a></li>
-    		     		<li><a href="">实测：这几款20万左右的新款SUV，用料到底...</a></li>
-    		     		<li><a href=""> 黄健翔都没见过的人车大战，千万不能错过！</a></li>
-    		     		<li><a href="">蔚来已来|2018北京车展蔚来发布会</a></li>
-    		     		<li><a href="">雪佛兰万元补贴等你来抢  堵车时候手动挡跟车累吗</a></li>
-    		     	</ul>
-    		     </div>
-    		     </div>
-
-    		  <div class="content_left_right">
-    		      <div class="imageArea3">
-    				<a href=""><img src="images/0 (1).jpg" alt="" /></a>
-    		      </div>
-    		      <div class="txtArea3">
-    				<h3><a href="">薪资新规过渡期延长至2020年底  利好 股市2</a></h3>
-    		      </div><div>
-    		     	<ul>
-    		     		<li><a href="">大众全新OC首发亮相  家族颜值担当</a></li>
-    		     		<li><a href="">小伙10万入手01年的路虎揽胜，网友：加油站附...</a></li>
-    		     		<li><a href="">实测：这几款20万左右的新款SUV，用料到底...</a></li>
-    		     		<li><a href=""> 黄健翔都没见过的人车大战，千万不能错过！</a></li>
-    		     		<li><a href="">蔚来已来|2018北京车展蔚来发布会</a></li>
-    		     		<li><a href="">雪佛兰万元补贴等你来抢  堵车时候手动挡跟车累吗</a></li>
-    		     	</ul>
-    		     </div>
-    		     
-              </div>
-    	    </div>
+	<!-- banner1 start -->
+	<div class="timezhou inner">
+		<a href="http//time.qq.com">
+			<div class="erweima"></div>
+		</a>
+		<a href="http//110.qq.com" target="_blank" title="腾讯安全服务平台">
+			<div class="service"></div>
+		</a>
 	</div>
+	<!-- banner1 end -->
+
+	<!-- 要闻 今日话题 产品导航 财经 体育 大家爱看 start -->
+	<div class="content_mainnews   inner">
+		<div class="layoutleft">
+			<div class="leftAreas mainnews">
+				<div class="hd">
+					<h2>
+						<a href="#">要闻</a>
+					</h2>
+				</div>
+				<div class="content2">
+					<div class="ul1">
+						<ul>
+							<li class="bt"><a href="">习近平主持召开升入推动长江经济带发展座谈会</a></li>
+							<li><a href="">习近平总书记湖北之行第三天</a></li>
+							<li><a href="">这几天在湖北湖南考察 总书记最关心的是生态修复</a></li>
+							<li><a href="">习近平总书记考察长江 勉励大家守护好一江碧水</a></li>
+							<li><a href="">信息基础设施安全是“正确的网络安全观”的保障</a></li>
+							<li><a href="">从马克思主义哲学视角深刻认识新思想 </a><a href="">读懂马克思</a></li>
+							<li><a href="">长征十一号火箭“一箭五星”</a></li>
+							<li><a href="">今年一季度就业形势继续保持稳中向好</a></li>
+						</ul>
+					</div>
+					<div class="imageArea">
+						<a href=""><img src="images/hunzhaji.jpg" alt="" /></a>
+					</div>
+					<div class="txtarea">
+						<h3><a href="">美军承认出动B-52轰炸机“靠近中国南海”地区</a></h3>
+					</div>
+
+					<div class="ul2">
+						<ul>
+							<li><a href="" class="sp">NBA季后赛-字母歌31+14 雄鹿胜绿军拖入七枪</a></li>
+							<li><a href="" class="sp">朱婷帅瓦基弗夺土超女排冠军 刘洋收货大满贯</a></li>
+							<li><a href="">金正恩和文在寅在三八线附件中暑 起源半岛和平</a></li>
+							<li><a href="">英烈保护法通过！宣扬、梅花侵略战争将被追责</a></li>
+							<li><a href="">磨迪来了！这一次，他想从中国“带走”什么？</a></li>
+							<li><a href="">人社部：截止三月底 3066.5亿养老金已开始投资</a></li>
+							<li><a href="">中纪委机关报：对极少数人的通报是对多数人的关爱</a></li>
+							<li><a href="">美国公司涉嫌侵犯中国芯片设备 在上海被海关扣下</a></li>
+						</ul>
+					</div>
+					<div class="imageArea1">
+						<a href=""><img src="images/shenyao.jpg" alt="" /></a>
+					</div>
+					<div class="txtarea1">
+						<h3><a href="">"神药"事件后的莎普爱思：市值蒸发16亿</a></h3>
+					</div>
+					<div class="ul3">
+						<ul>
+							<li><a href="">NBA季后赛-字母歌31+14 雄鹿胜绿军拖入七枪</a></li>
+							<li><a href="">朱婷帅瓦基弗夺土超女排冠军 刘洋收货大满贯</a></li>
+							<li><a href="">金正恩和文在寅在三八线附件中暑 起源半岛和平</a></li>
+							<li><a href="">英烈保护法通过！宣扬、梅花侵略战争将被追责</a></li>
+							<li><a href="">磨迪来了！这一次，他想从中国“带走”什么？</a></li>
+							<li><a href="" class="sp">人社部：截止三月底 3066.5亿养老金已开始投资</a></li>
+							<li><a href="">中纪委机关报：对极少数人的通报是对多数人的关爱</a></li>
+							<li><a href="">美国公司涉嫌侵犯中国芯片设备 在上海被海关扣下</a></li>
+							<li><a href="">人社部：截止三月底 3066.5亿养老金已开始投资</a></li>
+							<li><a href="">中纪委机关报：对极少数人的通报是对多数人的关爱</a></li>
+							<li><a href="">美国公司涉嫌侵犯中国芯片设备 在上海被海关扣下</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- 今日话题 时光轴 start -->
+			<div class="leftAreas topic">
+				<div class="hd">
+					<h2>
+						<a href="#">今日话题</a> <a href=""><img src="images/timeqq.png" alt="" /></a>
+					</h2>
+				</div>
+				<div class="content2_m">
+					<div class="ul1">
+						<ul>
+							<li class="bt"> <a href=""> 于正抄袭法院都判完了，就不道歉怎么办？</a></li>
+							<li> <a href="">“每月给女职工法50元卫生费”，好心可能办坏事</a></li>
+							<li> <a href="">何必急着推翻“史上最真诚的高校招聘启事”</a></li>
+							<li> <a href="">办护照只跑一次”，便民按下“快捷键”</a></li>
+							<li> <a href="">扶梯减少1度倾斜，行人增加1分安全</a></li>
+							<li> <a href="">旅行团不接刀急着，掩耳就能盗铃？</a></li>
+							<li> <a href="">警察局“副局长太大”辱骂掌掴，不能忍更不必忍</a></li>
+						</ul>
+					</div>
+					<div class="ul2">
+						<div class="rebotitle">
+							<h2><a href="">今日热播</a>
+								<a href="">影视剧</a>
+								<a href="">综艺</a></h2>
+						</div>
+						<div class="db">
+							<div class="db_left">
+								<img src="images/huangzitao.jpg" alt="" />
+								<p><a href="">黄子韬严厉点评：没本</a></p>
+							</div>
+							<div class="db_right">
+								<img src="images/luhan.jpg" alt="" />
+								<p><a href="">鹿晗跑圈狂喊：我好帅</a></p>
+							</div>
+						</div>
+						<ul>
+							<li><a href="" class="sp">外交部发言人引用诗句回应</a></li>
+							<li><a href="" class="sp">五一假期将至，这份最全出现安全指南请收好！</a></li>
+							<li><a href="" class="sp">微信退出神秘黑科技，扫一扫就能识别花草植物</a></li>
+							<li><a href="" class="sp">央视主播再出段子</a><a href=""> 这一家四口都是网红主播</a></li>
+							<li><a href="" class="sp">闪电侠韦德季后赛五佳球 </a><a href=""> 四岁萌娃挑战闯关游戏</a></li>
+							<li><a href="" class="sp">老板《水浒传》演员再聚首</a><a href=""> 盘点90后高校回忆</a></li>
+
+						</ul>
+					</div>
+					<div class="ul3">
+						<div class="hd">
+							<h2>
+								<a href="#">今日图话</a> <a href=""></a>
+							</h2>
+						</div>
+						<div class="db">
+							<div class="db_left">
+								<img src="images/jrth_left.jpg" alt="" />
+								<p><a href="">唱70多年评剧要开演唱</a></p>
+							</div>
+							<div class="db_right">
+								<img src="images/jrth_r.jpg" alt="" />
+								<p><a href="">明星宠物过头惹非议</a></p>
+							</div>
+						</div>
+						<ul>
+							<li><a href="">藏宝图</a> | <a href="">史上最高画作将上拍 这幅裸女贵在何处</a> </li>
+							<li><a href="">体坛</a> | <a href="">郎平惠若琪出席活动 全程热聊心情大好</a></li>
+							<li><a href="">入流</a> | <a href="">为什么我们还是如此痴迷米兰设计周？</a></li>
+							<li><a href="">尤物</a> | <a href="">杨幂剪了新发型新刘海，秒变19岁少女</a></li>
+							<li><a href="">车族</a> | <a href="">为什么宁愿热出汗 老司机也不开空调</a></li>
+							<li><a href="">谷雨</a> | <a href="">变性后的liutin，想谈一次恋爱</a></li>
+							<li><a href="">谷雨</a> | <a href="">寻子21年，郭刚堂任在路上</a></li>
+							<li><a href="">益视频</a> | <a href="">“行为公益”时代到来，腾讯公益刷新玩法</a></li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- 今日话题 时光轴 end -->
+		</div>
+
+		<div class="layoutright">
+			<!-- 右侧导航开始-->
+			<div class="productNav">
+				<div class="product01 lh28 w248">
+					<a href="">QQ</a>
+					<a href="">邮箱</a>
+					<a href="">会员</a>
+					<a href="" class="red">电脑管家</a>
+					<a href="">软件</a>
+				</div>
+				<div class="product02 lh28 w248">
+					<a href="">微信</a>
+					<a href="">空间</a>
+					<a href="">课堂</a>
+					<a href="">视频VIP</a>
+					<a href="">腾讯云</a>
+				</div>
+				<div class="product03 lh28 w248">
+					<a href="" class="red">新闻APP</a>
+					<a href="">体育APP</a>
+					<a href="">快报</a>
+					<a href="">企鹅号</a>
+					<a href="">视频</a>
+					<a href="">手机管家</a>
+					<a href="">浏览器</a>
+					<a href="">应用宝</a>
+				</div>
+				<div class="product04 lh28 w248">
+					<a href="">LOL</a>
+					<a href="">DNF</a>
+					<a href="">CF</a>
+					<a href="">冒险岛2</a>
+					<a href="">QQ炫舞</a>
+					<a href="">爱玩</a>
+					<a href="">逆战</a>
+					<a href="">天刀</a>
+					<a href="">火影OL</a>
+					<a href="">王者</a>
+				</div>
+				<div class="product05 lh28 w248">
+					<a href="">京东</a>
+					<a href="">理财通</a>
+					<a href="">企鹅FM</a>
+					<a href="">Q币</a>
+					<a href="">全部</a>
+				</div>
+
+			</div>
+			<!-- 右侧导航结束-->
+
+			<div class="sghz">
+				<a href="" class="time"></a>
+			</div>
+
+			<!-- 市场行情 -->
+			<div class="zixuangu">
+				<div class="hd">
+					<h2>
+						<a href="#">市场行情</a>
+					</h2>
+
+					<div class="financeSearch">
+						<form action="">
+							<input type="text" />
+							<input type="button" id="search_btn" value="s" />
+						</form>
+					</div>
+				</div>
+				<div class="financeTab">
+					<ul>
+						<li><a href="">上证</a></li>
+						<li><a href="">恒指</a></li>
+						<li><a href="">道指</a></li>
+						<li><a href="">腾安</a></li>
+
+					</ul>
+				</div>
+				<div class="gushi">
+					<div class="zoushitu">
+						<a href=""><img src="images/hq_img.png" alt="" /></a>
+					</div>
+					<div class="zoushitu_R">
+						<p><a href="">道琼斯</a></p>
+						<dd class="price"> 2295.59</dd>
+						<dd class="s">+1.84 +0.08%</dd>
+					</div>
+					<p class="loginzixuangu"><a href="">[登录自选股]查看我的股票走势</a></p>
+				</div>
+
+			</div>
+
+			<!--星座运势  -->
+			<div class="xinzuoyunshi">
+				<div class="hd">
+					<h2>
+						<a href="#">星座运势</a>
+					</h2>
+				</div>
+				<div class="xinzuochaxun">
+					<div class="imgxz">
+
+					</div>
+					<div class="selected_yunshi">
+						<select name="" id="">
+							<option value="">金牛座（04.20-05.20）</option>
+							<option value="">白羊座（03.21-04.19）</option>
+							<option value="">双子座（05.21-06.21）</option>
+							<option value="">巨蟹座（06.22-07.22）</option>
+						</select>
+						<div class="todayyunshi">
+							<p>今日运势：</p>
+						</div>
+
+						<div class="yunshixin">
+
+						</div>
+					</div>
+
+				</div>
+				<p class="xiangxi">今天是自信而又快乐的一天，在工作上也会表现良好。去体验绘画，音乐这样快乐的事情。去好好的展……<a href="">[详细]</a></p>
+			</div>
+
+		</div>
+		<!-- 要闻 今日话题 产品导航 财经 体育 大家爱看 end -->
+
+		<!-- banner2 start -->
+		<div class="banner2 inner">
+			<a href="http//time.qq.com">
+				<div class="banner_left"></div>
+			</a>
+			<a href="http//110.qq.com" target="_blank" title="腾讯安全服务平台">
+				<div class="banner_right"></div>
+			</a>
+		</div>
+		<!-- banner2 end -->
+
+		<div class="contentlayout">
+			<!-- 个性化通栏一start -->
+			<div class="contentModBig">
+				<div class="hd">
+					<h2><a href="">财经</a><span>/</span>
+						<a href="">证券</a><span>/</span>
+						<a href="">理财</a>
+					</h2>
+				</div>
+				<div class="contentModBig_left">
+					<div class="content_left_left">
+						<div class="imageArea3">
+							<a href=""><img src="images/0.jpg" alt="" /></a>
+						</div>
+						<div class="txtArea3 mar_left">
+							<h3><a href="">29省公布一季度经济数据：GDP增速贵州第1天津垫底</a></h3>
+						</div>
+						<div>
+							<ul>
+								<li><a href="">大众全新OC首发亮相 家族颜值担当</a></li>
+								<li><a href="">小伙10万入手01年的路虎揽胜，网友：加油站附...</a></li>
+								<li><a href="">实测：这几款20万左右的新款SUV，用料到底...</a></li>
+								<li><a href=""> 黄健翔都没见过的人车大战，千万不能错过！</a></li>
+								<li><a href="">蔚来已来|2018北京车展蔚来发布会</a></li>
+								<li><a href="">雪佛兰万元补贴等你来抢 堵车时候手动挡跟车累吗</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="content_left_right">
+						<div class="imageArea3">
+							<a href=""><img src="images/0 (1).jpg" alt="" /></a>
+						</div>
+						<div class="txtArea3">
+							<h3><a href="">薪资新规过渡期延长至2020年底 利好 股市2</a></h3>
+						</div>
+						<div>
+							<ul>
+								<li><a href="">大众全新OC首发亮相 家族颜值担当</a></li>
+								<li><a href="">小伙10万入手01年的路虎揽胜，网友：加油站附...</a></li>
+								<li><a href="">实测：这几款20万左右的新款SUV，用料到底...</a></li>
+								<li><a href=""> 黄健翔都没见过的人车大战，千万不能错过！</a></li>
+								<li><a href="">蔚来已来|2018北京车展蔚来发布会</a></li>
+								<li><a href="">雪佛兰万元补贴等你来抢 堵车时候手动挡跟车累吗</a></li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
 
 
-	<div class="contentMod contentMod1">
-		  <div class="hd">
-			 <h2><a href="">房产</a><span>/</span>
-                <a href="">腾讯看房</a>
-                 
-			 </h2>
-		    </div>
-		    <div class="contentMod_right">
-		         <div class="imageArea3">
-    				<a href=""><img src="images/146871091_small.jpg" alt="" /></a>
-    		     </div>
-    		     <div class="txtArea3 mar_left">
-    				<h3><a href="">比颜值拼实惠  十万起步的合资品质SUV</a></h3>
-    		     </div> 
-    		     <div>
-    		     	<ul>
-    		     		<li><a href="">大众全新OC首发亮相  家族颜值担当</a></li>
-    		     		<li><a href="">小伙10万入手01年的路虎揽胜，网友：加油站附...</a></li>
-    		     		<li><a href="">实测：这几款20万左右的新款SUV，用料到底...</a></li>
-    		     		<li><a href=""> 黄健翔都没见过的人车大战，千万不能错过！</a></li>
-    		     		<li><a href="">蔚来已来|2018北京车展蔚来发布会</a></li>
-    		     		<li><a href="">雪佛兰万元补贴等你来抢  堵车时候手动挡跟车累吗</a></li>
-    		     	</ul>
-    		     </div>
-    		</div>     
-	</div>
-	<!-- 个性化通栏2end -->
-</div>
+			<div class="contentMod">
+				<div class="hd">
+					<h2><a href="">汽车</a><span>/</span>
+						<a href="">在线购车</a>
+					</h2>
+				</div>
+				<div class="contentMod_right">
+					<div class="imageArea3">
+						<a href=""><img src="images/146871091_small.jpg" alt="" /></a>
+					</div>
+					<div class="txtArea3 mar_left">
+						<h3><a href="">比颜值拼实惠 十万起步的合资品质SUV</a></h3>
+					</div>
+					<div>
+						<ul>
+							<li><a href="">大众全新OC首发亮相 家族颜值担当</a></li>
+							<li><a href="">小伙10万入手01年的路虎揽胜，网友：加油站附...</a></li>
+							<li><a href="">实测：这几款20万左右的新款SUV，用料到底...</a></li>
+							<li><a href=""> 黄健翔都没见过的人车大战，千万不能错过！</a></li>
+							<li><a href="">蔚来已来|2018北京车展蔚来发布会</a></li>
+							<li><a href="">雪佛兰万元补贴等你来抢 堵车时候手动挡跟车累吗</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- 个性化通栏一end -->
+		</div>
 
 
-<div class="contentlayout3">
-<!-- 个性化通栏3start -->
-         <div class="hd">
-			 <h2><a href="">NBA</a><span>/</span>
-			 	<a href="">视频</a><span>/</span>
-                <a href="">赛程</a><span>/</span>
-                <a href="">数据</a>  
-			    <a  class="hd_mid" href="">数据</a></h2>   
-	       </div>	   
-	  	  
-		    <div class="content_left_left">
-		         <div class="imageArea3">
-    				<a href=""><img src="images/147858933.jpg" alt="" /></a>
-    		     </div>
-    		     <div class="txtArea3 mar_left">
-    				<h3><a href="">詹皇：抢七不会是骑士最后一战 盼乐福给我支持</a></h3>
-    		     </div> 
-    		      <div>
-    		     	<ul>
-    		     		<li><a href="">无库里勇士进攻依旧爆表地虎系列赛能赢几场？</a></li>
-    		     		<li><a href="">红黑榜：16+15+11vs21+10 他成浓眉最大克星？</a></li>
-    		     	
-    		     	</ul>
-    		     </div>
-    		   </div>
 
-    		     <div class="content_left_right">              
-   		            <div>
-    		     	    <ul>
-    		     	 	<li><a href="">季后赛观察：绿军挺进次轮 地虎还能制造动静？</a></li>
-    		     	 	<li><a href="">数据帝：格林延续不败定律 勇士一壮举仅逊四队 </a></li>
-    		     	 	<li><a href="">一节打崩地虎靠的是啥？无库勇士竟找回另一法宝 </a> </li>
-    		     	 	<li><a href=""> 甜瓜：雷霆对我使用没有策略 球队缺乏计划性</a> </li>
-    		     	 	<li><a href="">无解！杜兰特三节打卡下班 以数据超越滑翔机</a></li>   		     	 	
-    		     	   </ul>
-    		        </div>
-              </div>
-    	    
-                 <div class="contentMod_right">		   
-    		     <div>
-    		     	<ul>
-    		     		<li><a href="">哈登：不会把妈妈成为经纪人  工作中她仍是母亲</a></li>
-    		     		<li><a href="">浓眉哥遭杜兰特大帽  这一夜他未能展示统治力</a></li>
-    		     		<li><a href="">汤神：和地虎比赛更累 格林：我是防守催化剂.</a></li>
-    		     		<li><a href=""> 黄健翔都没见过的人车大战，千万不能错过！</a></li>
-    		     		<li><a href="">耐高巅峰赛第一轮：林励意外伤退 松山大胜省实</a></li>
-    		     		
-    		     	</ul>
-    		     </div>
-    		</div> 
-    		<div class="shipingbanner">
-    			
-    		</div>   
+		<div class="contentlayout">
+			<!-- 个性化通栏2start -->
+			<div class="contentModBig contentModBig1">
+				<div class="hd">
+					<h2><a href="">体育</a><span>/</span>
+						<a href="">NBA</a><span>/</span>
+						<a href="">英超</a><span>/</span>
+						<a href="">搏击</a>
+					</h2>
+				</div>
+				<div class="contentModBig_left">
+					<div class="content_left_left">
+						<div class="imageArea3">
+							<a href=""><img src="images/147858259.jpg" alt="" /></a>
+						</div>
+						<div class="txtArea3 mar_left">
+							<h3><a href="">29省公布一季度经济数据：GDP增速贵州第1天津垫底</a></h3>
+						</div>
+						<div>
+							<ul>
+								<li><a href="">大众全新OC首发亮相 家族颜值担当</a></li>
+								<li><a href="">小伙10万入手01年的路虎揽胜，网友：加油站附...</a></li>
+								<li><a href="">实测：这几款20万左右的新款SUV，用料到底...</a></li>
+								<li><a href=""> 黄健翔都没见过的人车大战，千万不能错过！</a></li>
+								<li><a href="">蔚来已来|2018北京车展蔚来发布会</a></li>
+								<li><a href="">雪佛兰万元补贴等你来抢 堵车时候手动挡跟车累吗</a></li>
+							</ul>
+						</div>
+					</div>
 
-	</div>		    
-<!-- 个性化通栏3 end -->
+					<div class="content_left_right">
+						<div class="imageArea3">
+							<a href=""><img src="images/0 (1).jpg" alt="" /></a>
+						</div>
+						<div class="txtArea3">
+							<h3><a href="">薪资新规过渡期延长至2020年底 利好 股市2</a></h3>
+						</div>
+						<div>
+							<ul>
+								<li><a href="">大众全新OC首发亮相 家族颜值担当</a></li>
+								<li><a href="">小伙10万入手01年的路虎揽胜，网友：加油站附...</a></li>
+								<li><a href="">实测：这几款20万左右的新款SUV，用料到底...</a></li>
+								<li><a href=""> 黄健翔都没见过的人车大战，千万不能错过！</a></li>
+								<li><a href="">蔚来已来|2018北京车展蔚来发布会</a></li>
+								<li><a href="">雪佛兰万元补贴等你来抢 堵车时候手动挡跟车累吗</a></li>
+							</ul>
+						</div>
 
-<div class="contentlayout4 contentlayout">
-<!-- 个性化通栏4 start -->
-       <div class="contentlayout4_left">	   
-	  	  
-		    <div class="content_left_left">
-		    	 <div class="hd">
-			       <h2><a href="">娱乐</a><span>/</span>
-			 	   <a href="">明星</a><span>/</span>               
-                    <a href="">电影</a> 
-                 </div>
-		       
-		         <div class="imageArea3">
-    				<a href=""><img src="images/7733498825_227x148.jpg" alt="" /></a>
-    		     </div>
-    		     <div class="txtArea3 mar_left">
-    				<h3><a href="">赵本山女儿小秀好身材 轻抚头发略显娇羞</a></h3>
-    		     </div> 
-    		      <div>
-    		     	<ul>
-    		     		<li><a href="">47岁“水果哥”爱唱歌 被赞为市场情歌王子</a></li>
-    		     		<li><a href="">张天爱也太拼了！张靓颖夸她发烧都还是那么美</a></li>
-    		     		<li><a href="">小姐姐教你用指关节就能实现神奇的功能</a></li>
-    		     		<li><a href="">娶或不娶，阚清子还是那个勇敢的阚清子</a></li>
-    		     		<li><a href="">港真，余文乐你是不是有什么把柄在导演手上</a></li>
-    		     		<li><a href="">看了开头猜不到结尾的，叫《创造101》</a></li>
-    		     	
-    		     	</ul>
-    		     </div>
-    		   </div>
-
-    		     <div class="content_left_right">              
-   		            <div>
-    		     	    <ul>
-    		     	 	<li><a href="">刘涛活动秀少女肌 侧露长腿展小性感</a></li>
-    		     	 	<li><a href="">只看了一集就预定了年度最佳韩剧</a></li>
-    		     	 	<li><a href="">全球最火的网红都来武汉了 气质不输范冰冰</a> </li>
-    		     	 	<li><a href=""> 又有人撞脸郭德纲！网友的评论亮了一条街</a> </li>
-    		     	 	<li><a href="">又剧慌了？女伴林永健的新美剧了解一下</a></li>   
-    		     	 	<li><a href="">蔡徐坤：冠军是我和ikun们一起努力的结果</a></li>
-    		     	 	<li><a href="">钟楚曦晒健身照，眩二头肌被赞好发达</a></li>
-    		     	 	<li><a href="">片单清收：2018年这些国产新片最值得期待</a></li>
-    		     	 	<li><a href="">《战神纪》的魔幻史诗，真的超乎想象</a></li>		     	 	
-    		     	   </ul>
-    		        </div>
-              </div>
-            </div>
-
-    	    
-            <div class="contentMod_right">		   
-    		     <div class="hd">
-			          <h2><a href="">娱乐</a><span>/</span>
-			 	      <a href="">明星</a><span>/</span>               
-                      <a href="">电影</a> 
-                      </h2>
-                 </div>	
-                 <div>
-                 	<img src="images/ninja152481250830426.jpg" alt="" />
-                 	<img src="images/ninja152481252776716.jpg" alt="" />
-                 	<img src="images/ninja152481255389232.jpg" alt="" />
-                 </div> 
-    		     <div>
-    		     	<ul>
-    		     		<li><a href="">哈登：不会把妈妈成为经纪人  工作中她仍是母亲</a></li>
-    		     		<li><a href="">浓眉哥遭杜兰特大帽  这一夜他未能展示统治力</a></li>
-    		     		<li><a href="">汤神：和地虎比赛更累 格林：我是防守催化剂.</a></li>
-    		     		<li><a href=""> 黄健翔都没见过的人车大战，千万不能错过！</a></li>
-    		     		<li><a href="">耐高巅峰赛第一轮：林励意外伤退 松山大胜省实</a></li>
-    		     		
-    		     	</ul>
-    		     </div>
-    		</div> 
-</div>	
-
-	<div class="contentlayout4 contentlayout">
-<!-- 个性化通栏5 start -->
-       <div class="contentlayout5_left">	   
-	  	  
-		    <div class="content_left_left">
-		    	<div class="hd">
-			       <h2><a href=""> 科技</a><span>/</span>
-			 	                
-                    <a href=""> 数码</a> 
-                 </div>
-		       
-		         <div class="imageArea3">
-    				<a href=""><img src="images/6784917338_227x148.jpg" alt="" /></a>
-    		     </div>
-    		     <div class="txtArea3 mar_left">
-    				<h3><a href="">都在讲内容生态，“循环能力”成为最大考点</a></h3>
-    		     </div> 
-    		      <div>
-    		     	<ul>
-    		     		<li><a href="">电商拼购凭证凭什么打动广场舞大妈姐妹群？</a></li>
-    		     		<li><a href="">传承和新生 区块链会让世界更加精彩</a></li>
-    		     		<li><a href="">地铁“技术大拿” 熔接8000多根头发丝细光纤</a></li>
-    		     		<li><a href="">锤子515新机或为坚果R1：或将搭配异形全面屏</a></li>
-    		     		<li><a href="">小米6X很无奈，全面屏+骁龙660已结降至新低</a></li>
-    		     		<li><a href="">三星S9遭1200磅磁铁撞击 重创之后仍可运行</a></li>
-    		     	
-    		     	</ul>
-    		     </div>
-    		   </div>
-
-    		     <div class="content_left_right"> 
-    		     <div class="imageArea3">
-    				<a href=""><img src="images/9340004543_227x148.jpg" alt="" /></a>
-    		     </div>
-    		     <div class="txtArea3 mar_left">
-    				<h3><a href="">西安街头流行无人店 学者认为要解决三大问题</a></h3>
-    		     </div>              
-   		            <div>
-    		     	    <ul>
-    		     	 	<li><a href="">恩阳区：拓宽农特产品电商网销售渠道</a></li>
-    		     	 	<li><a href="">共享单车记：无人问津的百亿押金去哪了？</a></li>
-    		     	 	<li><a href="">神速 小米MIX 2S安卓9.0预览版流出</a> </li>
-    		     	 	<li><a href=""> 神速 小米MIX 2S安卓9.0预览版流出</a> </li>
-    		     	 	<li><a href="">贾跃亭造车一年回顾：令FF91回国前景未知</a></li>   
-    		     	 	<li><a href="">麦博Z5游戏耳机开箱赏图 看起来还是挺酷的</a></li>
-    		     	 	
-    		     	 		
-    		     	   </ul>
-    		        </div>
-              </div>
-            </div>
-
-    	    
-            <div class="contentMod_right contentMod_right5">		   
-    		     <div class="hd">
-			          <h2><a href="">文化</a>			 	      
-                      </h2>
-                 </div>	
-                 <div class="imageArea3">
-    				<a href=""><img src="images/0 (2).jpg" alt="" /></a>
-    		     </div>
-    		     <div class="txtArea3 mar_left">
-    				<h3><a href="">贾平凹：我在乡间生活的十九年</a></h3>
-    		     </div> 
-               
-    		     <div>
-    		     	<ul>
-    		     		<li><a href="">梁文道的朋友圈，从来不会让我们失望</a></li>
-    		     		<li><a href="">人类祖先合适又为何走出非洲</a></li>
-    		     		<li><a href="">100年后，你生活在什么地方？</a></li>
-    		     		<li><a href=""> 孙庆伟：重建信史，重建夏代</a></li>
-    		     		<li><a href="">《神迹书》：怪兽、彗星、与终蔫之时的其他征兆</a></li>
-    		     		<li><a href="">纪念陈忠实|像笔一支终成“文学神圣”</a></li>
-    		     		
-    		     	</ul>
-    		     </div>
-    		</div> 
-    </div>	
-
-<!-- banner3 start -->
-    <div class="banner2 inner  banner3">
-      	<a href="http//time.qq.com"><div class="banner_left  banner_660"></div></a>
-      	<a href="http//110.qq.com" target="_blank" title="腾讯安全服务平台"><div class="banner_right banner_320"></div></a>
-    </div>  
-
-<!-- banner3 end -->
-<div class="yonghushequ">
-  <div class="contentlayout6">
-<!-- 个性化通栏6start -->
-
-   <div class="contentlayout6_left">
-         <div class="hd">
-			 <h2><a href=""> 时尚</a><span>/</span>
-			 	 <a href="">美容</a><span>/</span>
-                <a href="">健康</a>  
-	       </div>	   
-	  	  
-		    <div class="content_left_left">
-		         <div class="imageArea3">
-    				<a href=""><img src="images/4857336806_227x148.jpg" alt="" /></a>
-    		     </div>
-    		     <div class="txtArea3 mar_left">
-    				<h3><a href="">舒淇穿衣教学四法则</a></h3>
-    		     </div> 
-    		      <div>
-    		     	<ul>
-    		     		<li><a href="">林志玲，孙怡，马思纯机场私服，活动私服搭配</a></li>
-    		     		<li><a href="">从头 到脚清爽活力的T恤+牛仔裤短裤搭配</a></li>
-    		     			<li><a href="">矮个女生像沈月和周冬雨这样穿搭显高又显瘦</a></li>
-    		     		<li><a href="">大幂幂瘦了！越来越漂亮，新款发型显嫩</a></li>
-    		     			<li><a href="">教你几招出游穿搭技巧，让你轻松拥有最美假期</a></li>
-    		     		<li><a href="">刘涛这形象越来越知性了，戏里戏外都这么美</a></li>
-    		     	
-    		     	</ul>
-    		     </div>
-    		   </div>
-           </div>
-
-           <div class="contentlayout6_mid">
-         <div class="hd">
-			 <h2>
-                <a href="">大家</a>  
-	       </div>	   
-	  	  
-		    <div class="content_left_left">
-		         <div class="imageArea3">
-    				<a href=""><img src="images/ninja152489481761199.jpg" alt="" /></a>
-    		     </div>
-    		     <div class="txtArea3 mar_left">
-    				<h3><a href="">没有东北话，还能做成有趣的春晚吗</a></h3>
-    		     </div> 
-    		      <div>
-    		     	<ul>
-    		     		<li><a href="">田思露：茶花女的另一种结局</a></li>
-    		     		<li><a href="">西门媚：1994，羊肉串、呼啦圈和外面的世界</a></li>
-    		     			<li><a href="">盗版伤害了中国软件，却撑起了那时的中国经济</a></li>
-    		     		<li><a href="">互联网孤岛，怎样才能连成大陆？</a></li>
-    		     			<li><a href="">王笛：旧社会成都的地域歧视链</a></li>
-    		     		<li><a href="">王斌：让作者待着吧，我要先搓饭</a></li>
-    		     	
-    		     	</ul>
-    		     </div>
-    		   </div>
-           </div>
-
-           <div class="contentlayout6_right">
-         <div class="hd">
-			 <h2><a href="">星座</a>
-			 	
-	       </div>	   
-	  	  
-		    <div class="content_left_left">
-		         <div class="imageArea3">
-    				<a href=""><img src="images/ninja152505859160996.jpg" alt="" /></a>
-    		     </div>
-    		     <div class="txtArea3 mar_left">
-    				<h3><a href="">哪些星座一周伊始交好运？
-    				爱情事业金钱顺风顺水</a></h3>
-    		     </div> 
-    		      <div>
-    		     	<ul>
-    		     		<li><a href="">对谁都这样没办法 忽冷忽热的四大星座男</a></li>
-    		     		<li><a href="">不要去看这四大星座的朋友圈 很不现实</a></li>
-    		     			<li><a href="">十二星座男有什么表现 说明他不喜欢你</a></li>
-    		     		<li><a href="">本月正逢吉星高照 五月人生逆转的几大生肖</a></li>
-    		     			<li><a href="">被男人们抢着娶回家的四大星座女！</a></li>
-    		     		<li><a href="">十二星座谁最会呵护人？</a></li>
-    		     	
-    		     	</ul>
-    		     </div>
-    		   </div>
-           </div>
-    		      
-    </div>
-    
-<div class="contentlayout6 contentlayout7">
-<!-- 个性化通栏7start -->
-
-   <div class="contentlayout6_left">
-         <div class="hd">
-			 <h2><a href=""> 教育</a><span>/</span>
-			 	 <a href="">出国</a><span>/</span>
-                <a href="">精品课</a>  
-	       </div>	   
-	  	  
-		    <div class="content_left_left">
-		         <div class="imageArea3">
-    				<a href=""><img src="images/4857336806_227x148.jpg" alt="" /></a>
-    		     </div>
-    		     <div class="txtArea3 mar_left">
-    				<h3><a href="">教育部@你！4月，这些教育大使与你息息相关</a></h3>
-    		     </div> 
-    		      <div>
-    		     	<ul>
-    		     		<li><a href="">林志玲，孙怡，马思纯机场私服，活动私服搭配</a></li>
-    		     		<li><a href="">从头 到脚清爽活力的T恤+牛仔裤短裤搭配</a></li>
-    		     			<li><a href="">矮个女生像沈月和周冬雨这样穿搭显高又显瘦</a></li>
-    		     		<li><a href="">大幂幂瘦了！越来越漂亮，新款发型显嫩</a></li>
-    		     			<li><a href="">教你几招出游穿搭技巧，让你轻松拥有最美假期</a></li>
-    		     		<li><a href="">刘涛这形象越来越知性了，戏里戏外都这么美</a></li>
-    		     	
-    		     	</ul>
-    		     </div>
-    		   </div>
-    
-    </div>
-
-         <div class="contentlayout6_mid">
-         <div class="hd">
-			   <h2>
-                <a href="">儿童</a><span>/</span>  
-                <a href="">育儿</a><span>/</span>  
-                <a href="">Fun秀</a><span>/</span> 
-               </h2> 
-	       </div>  
-	  	  
-		    <div class="content_left_left">
-		         <div class="imageArea">
-		         	<div class="image">
-    				<a href=""><img src="images/147841858.jpg" alt="" /></a>
-    				<p><a href="">二哈和宝</a></p>
-                    </div>                
-                    <div class="image">
-    				<a href=""><img src="images/146738257.jpg" alt="" /></a>
-    				<p><a href="">二哈和宝</a></p>
-                   </div>                 
-                  	<div class="image">
-    				<a href=""><img src="images/147845451.jpg" alt="" /></a>
-    				<p><a href="">二哈和宝</a></p>
-                    </div>
-                    <div class="image">
-    				<a href=""><img src="images/146738241.jpg" alt="" /></a>
-    				<p><a href="">二哈和宝</a></p>
-    				 </div>
-    		     </div>
-    		    
-    		      <div class="ul7">
-    		     	<ul>
-    		     		<li><a href="">田思露：茶花女的另一种结局</a></li>
-    		     		<li><a href="">西门媚：1994，羊肉串、呼啦圈和外面的世界</a></li>
-    		     			<li><a href=""  class="sp">盗版伤害了中国软件，却撑起了那时的中国经济</a></li>
-    		     		<li><a href=""  class="sp">互联网孤岛，怎样才能连成大陆？</a></li>
-    		     			<li><a href=""  class="sp">王笛：旧社会成都的地域歧视链</a></li>
-    		     		<li><a href="" class="sp">王斌：让作者待着吧，我要先搓饭</a></li>
-    		     	
-    		     	</ul>
-    		     </div>
-    		   </div>
-           </div>
-
-          <div class="contentlayout7_right">
-       
-           </div>
-    		      
-    </div>
-</div>  
+					</div>
+				</div>
+			</div>
 
 
-<div class="yonghushequ1">
-  <div class="contentlayout6">
-<!-- 个性化通栏8start -->
+			<div class="contentMod contentMod1">
+				<div class="hd">
+					<h2><a href="">房产</a><span>/</span>
+						<a href="">腾讯看房</a>
 
-   <div class="contentlayout6_left">
-         <div class="hd">
-			 <h2><a href=""> 时尚</a><span>/</span>
-			 	 <a href="">美容</a><span>/</span>
-                <a href="">健康</a>  
-	       </div>	   
-	  	  
-		    <div class="content_left_left">
-		         <div class="imageArea3">
-    				<a href=""><img src="images/0 (3).jpg" alt="" /></a>
-    		     </div>
-    		     <div class="txtArea3 mar_left">
-    				<h3><a href="">俄舰队日本演戏视频曝光完成100多项战术演练</a></h3>
-    		     </div> 
-    		      <div>
-    		     	<ul>
-    		     		<li><a href="">林志玲，孙怡，马思纯机场私服，活动私服搭配</a></li>
-    		     		<li><a href="">从头 到脚清爽活力的T恤+牛仔裤短裤搭配</a></li>
-    		     		<li><a href="">矮个女生像沈月和周冬雨这样穿搭显高又显瘦</a></li>
-    		     		<li><a href="">大幂幂瘦了！越来越漂亮，新款发型显嫩</a></li>
-    		     		<li><a href="">教你几招出游穿搭技巧，让你轻松拥有最美假期</a></li>
-    		     		<li><a href="">刘涛这形象越来越知性了，戏里戏外都这么美</a></li>    		     	
-    		     	</ul>
-    		     </div>
-    		   </div>
-           </div>
-
-           <div class="contentlayout6_mid">
-           <div class="hd">
-			 <h2>
-                <a href="">游戏 /动漫</a>  
-	       </div>	   
-	  	  
-		    <div class="content_left_left">
-		         <div class="imageArea3">
-    				<a href=""><img src="images/ninja152504748476185.jpg" alt="" /></a>
-    		     </div>
-    		     <div class="txtArea3 mar_left">
-    				<h3><a href="">没有东北话，还能做成有趣的春晚吗</a></h3>
-    		     </div> 
-    		      <div>
-    		     	<ul>
-    		     		<li><a href="">田思露：茶花女的另一种结局</a></li>
-    		     		<li><a href="">西门媚：1994，羊肉串、呼啦圈和外面的世界</a></li>
-    		     			<li><a href="">盗版伤害了中国软件，却撑起了那时的中国经济</a></li>
-    		     		<li><a href="">互联网孤岛，怎样才能连成大陆？</a></li>
-    		     			<li><a href="">王笛：旧社会成都的地域歧视链</a></li>
-    		     		<li><a href="">王斌：让作者待着吧，我要先搓饭</a></li>
-    		     	
-    		     	</ul>
-    		     </div>
-    		   </div>
-           </div>
-
-        <div class="contentlayout6_right">
-         <div class="hd">
-			 <h2><a href="">专享</a>
-			 	
-	       </div>	   
-	  	  
-		    <div class="content_left_left">
-		         <div class="imageArea3">
-    				<a href=""><img src="images/0 (5).jpg" alt="" /></a>
-    		     </div>
-    		     <div class="txtArea3 mar_left">
-    				<h3><a href="">哪些星座一周伊始交好运？
-    				爱情事业金钱顺风顺水</a></h3>
-    		     </div> 
-    		      <div>
-    		     	<ul>
-    		     		<li><a href="">对谁都这样没办法 忽冷忽热的四大星座男</a></li>
-    		     		<li><a href="">不要去看这四大星座的朋友圈 很不现实</a></li>
-    		     			<li><a href="">十二星座男有什么表现 说明他不喜欢你</a></li>
-    		     		<li><a href="">本月正逢吉星高照 五月人生逆转的几大生肖</a></li>
-    		     			<li><a href="">被男人们抢着娶回家的四大星座女！</a></li>
-    		     		<li><a href="">十二星座谁最会呵护人？</a></li>
-    		     	
-    		     	</ul>
-    		     </div>
-    		   </div>
-           </div>
-    		      
-    </div>
-    
-<div class="contentlayout6 contentlayout7">
-<!-- 个性化通栏9start -->
-
-   <div class="contentlayout6_left">
-         <div class="hd">
-			 <h2><a href="">社会</a>
-	       </div>	   
-	  	  
-		    <div class="content_left_left">
-		         <div class="imageArea3">
-    				<a href=""><img src="images/4857336806_227x148.jpg" alt="" /></a>
-    		     </div>
-    		     <div class="txtArea3 mar_left">
-    				<h3><a href="">教育部@你！4月，这些教育大使与你息息相关</a></h3>
-    		     </div> 
-    		      <div>
-    		     	<ul>
-    		     		<li><a href="">林志玲，孙怡，马思纯机场私服，活动私服搭配</a></li>
-    		     		<li><a href="">从头 到脚清爽活力的T恤+牛仔裤短裤搭配</a></li>
-    		     			<li><a href="">矮个女生像沈月和周冬雨这样穿搭显高又显瘦</a></li>
-    		     		<li><a href="">大幂幂瘦了！越来越漂亮，新款发型显嫩</a></li>
-    		     			<li><a href="">教你几招出游穿搭技巧，让你轻松拥有最美假期</a></li>
-    		     		<li><a href="">刘涛这形象越来越知性了，戏里戏外都这么美</a></li>
-    		     	
-    		     	</ul>
-    		     </div>
-    		   </div>
-    
-    </div>
-
-        <div class="contentlayout6_mid">
-         <div class="hd">
-			 <h2> <a href=""> 儒学</a><span>/</span>  
-                <a href="">佛学</a><span>/</span>   <a href="">道学</a><span>/</span>  
-	       </div>	   
-	  	  
-		    <div class="content_left_left">
-		         <div class="imageArea3">
-    				<a href=""><img src="images/147856688.jpg" alt="" /></a>
-    		     </div>
-    		     <div class="txtArea3 mar_left">
-    				<h3><a href="">有五种人求财，佛菩萨不会让他如愿……</a></h3>
-    		     </div> 
-    		     <div>
-    		     	<ul>
-    		     		<li><a href="">儒学|方为立身之本 圆乃处世之道</a></li>
-    		     		<li><a href="">活出自己的人生本色：去留无意 宠辱不惊</a></li>
-    		     			<li><a href="">佛学|七大高僧留下的最后一句话，惊醒人心</a></li>
-    		     		<li><a href="">虚云老和尚珍贵开示：念佛与参禅</a></li>
-    		     			<li><a href="">道学|科学VS宗教？不，科学与宗教携手并行</a></li>
-    		     		<li><a href="">中华道学白问|道教对盛唐诗歌到了怎样的影响</a></li>
-    		     	
-    		     	</ul>
-    		     </div>
-    		   </div>
-           </div>
-
-          <div class="contentlayout9_right">       
-          </div>
-    		      
-    </div>
-</div>   
-
-<!-- 个性化通栏10 -->
-<div class="yonghushequ3">
-	 <div class="contentlayout6">
-   <div class="contentlayout6_left">
-         <div class="hd">
-			 <h2><a href=""> 时尚</a><span>/</span>
-			 	 <a href="">美容</a><span>/</span>
-                <a href="">健康</a>  
-	       </div>	   
-	  	  
-		    <div class="content_left_left">
-		         <div class="imageArea3">
-    				<a href=""><img src="images/0 (3).jpg" alt="" /></a>
-    		     </div>
-    		     <div class="txtArea3 mar_left">
-    				<h3><a href="">俄舰队日本演戏视频曝光完成100多项战术演练</a></h3>
-    		     </div> 
-    		      <div>
-    		     	<ul>
-    		     		<li><a href="">林志玲，孙怡，马思纯机场私服，活动私服搭配</a></li>
-    		     		<li><a href="">从头 到脚清爽活力的T恤+牛仔裤短裤搭配</a></li>
-    		     		<li><a href="">矮个女生像沈月和周冬雨这样穿搭显高又显瘦</a></li>
-    		      		     	
-    		     	</ul>
-    		     </div>
-    		   </div>
-           </div>
-
-           <div class="contentlayout6_mid">
-           <div class="hd">
-			 <h2>
-                <a href="">游戏 /动漫</a>  
-	       </div>	   
-	  	  
-		    <div class="content_left_left">
-		         <div class="imageArea3">
-    				<a href=""><img src="images/ninja152504748476185.jpg" alt="" /></a>
-    		     </div>
-    		     <div class="txtArea3 mar_left">
-    				<h3><a href="">没有东北话，还能做成有趣的春晚吗</a></h3>
-    		     </div> 
-    		      <div>
-    		     	<ul>
-    		     		<li><a href="">田思露：茶花女的另一种结局</a></li>
-    		     		<li><a href="">西门媚：1994，羊肉串、呼啦圈和外面的世界</a></li>
-    		     			<li><a href="">盗版伤害了中国软件，却撑起了那时的中国经济</a></li>
-    		    
-    		     	
-    		     	</ul>
-    		     </div>
-    		   </div>
-           </div>
-
-           <div class="contentlayout6_right">
-           <div class="hd">
-			 <h2><a href=""> 视觉焦点</a>
-			 	
-	       </div>	   
-	  	  
-		    <div class="content_left_left">
-		         <div class="imageArea3">
-    				<a href=""><img src="images/0 (5).jpg" alt="" /></a>
-    		     </div>
-    		     <div class="txtArea3 mar_left">
-    				<h3><a href="">哪些星座一周伊始交好运？
-    				爱情事业金钱顺风顺水</a></h3>
-    		     </div> 
-    		      <div>
-    		     	<ul>
-    		     		<li><a href="">对谁都这样没办法 忽冷忽热的四大星座男</a></li>
-    		     		<li><a href="">不要去看这四大星座的朋友圈 很不现实</a></li>
-    		     			<li><a href="">十二星座男有什么表现 说明他不喜欢你</a></li>
-    		     	
-    		     	</ul>
-    		     </div>
-    		   </div>
-           </div>
-
-</div>
-
-<div class="contentlayoutend">
-	  <div class="hd">
-			 <h2><a href="">专享</a>			 	
-	  </div>	
-
-	   <div class="shijuejiaodian">
-	      <div class="imageend">
-	       		<a href=""><img src="images/147811938.jpg" alt="" /></a>
-	       		<p><a href="">83岁老人在大学旁听古...</a></p>
-	      </div>
-
-	      <div class="imageend">
-	       		<a href=""><img src="images/147839584.jpg" alt="" /></a>
-	       		<p><a href="">漂浮金字塔预计2022年...</a></p>
-	        </div>
-
-	       	<div class="imageend">
-	       		<a href=""><img src="images/147855228.jpg" alt="" /></a>
-	       		<p><a href="">青春期的记忆</a></p>
-	       	</div>
-
-	       	<div class="imageend">
-	       		<a href=""><img src="images/147771503.jpg" alt="" /></a>
-	       		<p><a href="">今年新版iPhone猜想</a></p>
-	       </div>
-
-	       	<div class="imageend">
-	       		<a href=""><img src="images/147854947.jpg" alt="" /></a>
-	       		<p><a href="">实用！89平改出三室两厅</a></p>
-	       </div>
-
-	       	<div class="imageend last">
-	       		<a href=""><img src="images/147854601.jpg" alt="" /></a>
-	       		<p><a href="">10万级别自主SUV如何选</a></p>
-	       	</div>
-	       	
-	       </ul>	
-	   </div>
-
-<!-- 最后一条广告栏 -->
-        <div class="bannner lastbanner">
-	
-        </div>
-</div>
+					</h2>
+				</div>
+				<div class="contentMod_right">
+					<div class="imageArea3">
+						<a href=""><img src="images/146871091_small.jpg" alt="" /></a>
+					</div>
+					<div class="txtArea3 mar_left">
+						<h3><a href="">比颜值拼实惠 十万起步的合资品质SUV</a></h3>
+					</div>
+					<div>
+						<ul>
+							<li><a href="">大众全新OC首发亮相 家族颜值担当</a></li>
+							<li><a href="">小伙10万入手01年的路虎揽胜，网友：加油站附...</a></li>
+							<li><a href="">实测：这几款20万左右的新款SUV，用料到底...</a></li>
+							<li><a href=""> 黄健翔都没见过的人车大战，千万不能错过！</a></li>
+							<li><a href="">蔚来已来|2018北京车展蔚来发布会</a></li>
+							<li><a href="">雪佛兰万元补贴等你来抢 堵车时候手动挡跟车累吗</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- 个性化通栏2end -->
+		</div>
 
 
-<div class="footer">
-	<a href=""> 关于腾讯  |</a>
-	<a href="">About Tencent  |</a>
-	<a href="">服务协议  |</a>
-	<a href="">隐私政策  |</a>
-	<a href="">开放平台  |</a>
-	<a href="">广告服务  |</a>
-	<a href="">商务洽谈  |</a>
-	<a href="">腾讯招聘  |</a>
-	<a href="">腾讯公益  |</a>
-	<a href="">客服中心  |</a>
-	<a href="">网站导航  |</a>
-	<a href="">客户端下载  |</a>
-	<a href="">版权所有</a>
-	<br />
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<a href=""> 深圳举报中心  |</a>
-	<a href="">深圳公安局  |</a>
-	<a href="">抵制违法广告承诺书  |</a>
-	<a href="">阳光.绿色网络工程  |</a>
-	<a href="">版权保护投诉指引  |</a>
-	<a href="">广东省通管局</a>
-	<br />
-	<a href="">粤网文【2017】6138-1456号 新出网证（粤）字010号 网络视听许可证1904073号 增值电信业务经营许可证：粤B2-20090059 B2-20090028</a>
-</br>
-   <a href="">Copyright 1998-2018 Tencent All Rights ReServed</a>
+		<div class="contentlayout3">
+			<!-- 个性化通栏3start -->
+			<div class="hd">
+				<h2><a href="">NBA</a><span>/</span>
+					<a href="">视频</a><span>/</span>
+					<a href="">赛程</a><span>/</span>
+					<a href="">数据</a>
+					<a class="hd_mid" href="">数据</a></h2>
+			</div>
+
+			<div class="content_left_left">
+				<div class="imageArea3">
+					<a href=""><img src="images/147858933.jpg" alt="" /></a>
+				</div>
+				<div class="txtArea3 mar_left">
+					<h3><a href="">詹皇：抢七不会是骑士最后一战 盼乐福给我支持</a></h3>
+				</div>
+				<div>
+					<ul>
+						<li><a href="">无库里勇士进攻依旧爆表地虎系列赛能赢几场？</a></li>
+						<li><a href="">红黑榜：16+15+11vs21+10 他成浓眉最大克星？</a></li>
+
+					</ul>
+				</div>
+			</div>
+
+			<div class="content_left_right">
+				<div>
+					<ul>
+						<li><a href="">季后赛观察：绿军挺进次轮 地虎还能制造动静？</a></li>
+						<li><a href="">数据帝：格林延续不败定律 勇士一壮举仅逊四队 </a></li>
+						<li><a href="">一节打崩地虎靠的是啥？无库勇士竟找回另一法宝 </a> </li>
+						<li><a href=""> 甜瓜：雷霆对我使用没有策略 球队缺乏计划性</a> </li>
+						<li><a href="">无解！杜兰特三节打卡下班 以数据超越滑翔机</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="contentMod_right">
+				<div>
+					<ul>
+						<li><a href="">哈登：不会把妈妈成为经纪人 工作中她仍是母亲</a></li>
+						<li><a href="">浓眉哥遭杜兰特大帽 这一夜他未能展示统治力</a></li>
+						<li><a href="">汤神：和地虎比赛更累 格林：我是防守催化剂.</a></li>
+						<li><a href=""> 黄健翔都没见过的人车大战，千万不能错过！</a></li>
+						<li><a href="">耐高巅峰赛第一轮：林励意外伤退 松山大胜省实</a></li>
+
+					</ul>
+				</div>
+			</div>
+			<div class="shipingbanner">
+
+			</div>
+
+		</div>
+		<!-- 个性化通栏3 end -->
+
+		<div class="contentlayout4 contentlayout">
+			<!-- 个性化通栏4 start -->
+			<div class="contentlayout4_left">
+
+				<div class="content_left_left">
+					<div class="hd">
+						<h2><a href="">娱乐</a><span>/</span>
+							<a href="">明星</a><span>/</span>
+							<a href="">电影</a>
+					</div>
+
+					<div class="imageArea3">
+						<a href=""><img src="images/7733498825_227x148.jpg" alt="" /></a>
+					</div>
+					<div class="txtArea3 mar_left">
+						<h3><a href="">赵本山女儿小秀好身材 轻抚头发略显娇羞</a></h3>
+					</div>
+					<div>
+						<ul>
+							<li><a href="">47岁“水果哥”爱唱歌 被赞为市场情歌王子</a></li>
+							<li><a href="">张天爱也太拼了！张靓颖夸她发烧都还是那么美</a></li>
+							<li><a href="">小姐姐教你用指关节就能实现神奇的功能</a></li>
+							<li><a href="">娶或不娶，阚清子还是那个勇敢的阚清子</a></li>
+							<li><a href="">港真，余文乐你是不是有什么把柄在导演手上</a></li>
+							<li><a href="">看了开头猜不到结尾的，叫《创造101》</a></li>
+
+						</ul>
+					</div>
+				</div>
+
+				<div class="content_left_right">
+					<div>
+						<ul>
+							<li><a href="">刘涛活动秀少女肌 侧露长腿展小性感</a></li>
+							<li><a href="">只看了一集就预定了年度最佳韩剧</a></li>
+							<li><a href="">全球最火的网红都来武汉了 气质不输范冰冰</a> </li>
+							<li><a href=""> 又有人撞脸郭德纲！网友的评论亮了一条街</a> </li>
+							<li><a href="">又剧慌了？女伴林永健的新美剧了解一下</a></li>
+							<li><a href="">蔡徐坤：冠军是我和ikun们一起努力的结果</a></li>
+							<li><a href="">钟楚曦晒健身照，眩二头肌被赞好发达</a></li>
+							<li><a href="">片单清收：2018年这些国产新片最值得期待</a></li>
+							<li><a href="">《战神纪》的魔幻史诗，真的超乎想象</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
 
 
-</div>
+			<div class="contentMod_right">
+				<div class="hd">
+					<h2><a href="">娱乐</a><span>/</span>
+						<a href="">明星</a><span>/</span>
+						<a href="">电影</a>
+					</h2>
+				</div>
+				<div>
+					<img src="images/ninja152481250830426.jpg" alt="" />
+					<img src="images/ninja152481252776716.jpg" alt="" />
+					<img src="images/ninja152481255389232.jpg" alt="" />
+				</div>
+				<div>
+					<ul>
+						<li><a href="">哈登：不会把妈妈成为经纪人 工作中她仍是母亲</a></li>
+						<li><a href="">浓眉哥遭杜兰特大帽 这一夜他未能展示统治力</a></li>
+						<li><a href="">汤神：和地虎比赛更累 格林：我是防守催化剂.</a></li>
+						<li><a href=""> 黄健翔都没见过的人车大战，千万不能错过！</a></li>
+						<li><a href="">耐高巅峰赛第一轮：林励意外伤退 松山大胜省实</a></li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="contentlayout4 contentlayout">
+			<!-- 个性化通栏5 start -->
+			<div class="contentlayout5_left">
+
+				<div class="content_left_left">
+					<div class="hd">
+						<h2><a href=""> 科技</a><span>/</span>
+
+							<a href=""> 数码</a>
+					</div>
+
+					<div class="imageArea3">
+						<a href=""><img src="images/6784917338_227x148.jpg" alt="" /></a>
+					</div>
+					<div class="txtArea3 mar_left">
+						<h3><a href="">都在讲内容生态，“循环能力”成为最大考点</a></h3>
+					</div>
+					<div>
+						<ul>
+							<li><a href="">电商拼购凭证凭什么打动广场舞大妈姐妹群？</a></li>
+							<li><a href="">传承和新生 区块链会让世界更加精彩</a></li>
+							<li><a href="">地铁“技术大拿” 熔接8000多根头发丝细光纤</a></li>
+							<li><a href="">锤子515新机或为坚果R1：或将搭配异形全面屏</a></li>
+							<li><a href="">小米6X很无奈，全面屏+骁龙660已结降至新低</a></li>
+							<li><a href="">三星S9遭1200磅磁铁撞击 重创之后仍可运行</a></li>
+
+						</ul>
+					</div>
+				</div>
+
+				<div class="content_left_right">
+					<div class="imageArea3">
+						<a href=""><img src="images/9340004543_227x148.jpg" alt="" /></a>
+					</div>
+					<div class="txtArea3 mar_left">
+						<h3><a href="">西安街头流行无人店 学者认为要解决三大问题</a></h3>
+					</div>
+					<div>
+						<ul>
+							<li><a href="">恩阳区：拓宽农特产品电商网销售渠道</a></li>
+							<li><a href="">共享单车记：无人问津的百亿押金去哪了？</a></li>
+							<li><a href="">神速 小米MIX 2S安卓9.0预览版流出</a> </li>
+							<li><a href=""> 神速 小米MIX 2S安卓9.0预览版流出</a> </li>
+							<li><a href="">贾跃亭造车一年回顾：令FF91回国前景未知</a></li>
+							<li><a href="">麦博Z5游戏耳机开箱赏图 看起来还是挺酷的</a></li>
 
 
-<div class="footerNew">
-	<div class="footerNewInner">
-	<div >
-		<span ><img src="images/footerNew1.gif" alt="" /></span>
-		<span><p><a href="">经营性网站备案信息</a></p></span>
-	</div>
-	<div>
-		<span ><img src="images/buliangfooternew2.png" alt="" /></span>
-		<span><p><a href="">中国互联网</a></p></span>
-	</div>
-	<div>
-		<span ><img src="images/wmlogofooternew2.gif" alt="" /></span>
-		<span><p><a href="">中国文明网</a></p></span>
-	</div>
-	<div class="four">
-		<span ><img src="images/cxrz5.png" alt="" /></span>
-		<span><p><a href=""></a></p></span>
-	</div>
-	<div class="last">
-		<span ><img src="images/gswj6.jpg" alt="" /></span>
-		<p><a href="">工商网监电子标识</a></p>
-	</div>
-	</div>
-</div>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="contentMod_right contentMod_right5">
+				<div class="hd">
+					<h2><a href="">文化</a>
+					</h2>
+				</div>
+				<div class="imageArea3">
+					<a href=""><img src="images/0 (2).jpg" alt="" /></a>
+				</div>
+				<div class="txtArea3 mar_left">
+					<h3><a href="">贾平凹：我在乡间生活的十九年</a></h3>
+				</div>
+
+				<div>
+					<ul>
+						<li><a href="">梁文道的朋友圈，从来不会让我们失望</a></li>
+						<li><a href="">人类祖先合适又为何走出非洲</a></li>
+						<li><a href="">100年后，你生活在什么地方？</a></li>
+						<li><a href=""> 孙庆伟：重建信史，重建夏代</a></li>
+						<li><a href="">《神迹书》：怪兽、彗星、与终蔫之时的其他征兆</a></li>
+						<li><a href="">纪念陈忠实|像笔一支终成“文学神圣”</a></li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- banner3 start -->
+		<div class="banner2 inner  banner3">
+			<a href="http//time.qq.com">
+				<div class="banner_left  banner_660"></div>
+			</a>
+			<a href="http//110.qq.com" target="_blank" title="腾讯安全服务平台">
+				<div class="banner_right banner_320"></div>
+			</a>
+		</div>
+
+		<!-- banner3 end -->
+		<div class="yonghushequ">
+			<div class="contentlayout6">
+				<!-- 个性化通栏6start -->
+
+				<div class="contentlayout6_left">
+					<div class="hd">
+						<h2><a href=""> 时尚</a><span>/</span>
+							<a href="">美容</a><span>/</span>
+							<a href="">健康</a>
+					</div>
+
+					<div class="content_left_left">
+						<div class="imageArea3">
+							<a href=""><img src="images/4857336806_227x148.jpg" alt="" /></a>
+						</div>
+						<div class="txtArea3 mar_left">
+							<h3><a href="">舒淇穿衣教学四法则</a></h3>
+						</div>
+						<div>
+							<ul>
+								<li><a href="">林志玲，孙怡，马思纯机场私服，活动私服搭配</a></li>
+								<li><a href="">从头 到脚清爽活力的T恤+牛仔裤短裤搭配</a></li>
+								<li><a href="">矮个女生像沈月和周冬雨这样穿搭显高又显瘦</a></li>
+								<li><a href="">大幂幂瘦了！越来越漂亮，新款发型显嫩</a></li>
+								<li><a href="">教你几招出游穿搭技巧，让你轻松拥有最美假期</a></li>
+								<li><a href="">刘涛这形象越来越知性了，戏里戏外都这么美</a></li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="contentlayout6_mid">
+					<div class="hd">
+						<h2>
+							<a href="">大家</a>
+					</div>
+
+					<div class="content_left_left">
+						<div class="imageArea3">
+							<a href=""><img src="images/ninja152489481761199.jpg" alt="" /></a>
+						</div>
+						<div class="txtArea3 mar_left">
+							<h3><a href="">没有东北话，还能做成有趣的春晚吗</a></h3>
+						</div>
+						<div>
+							<ul>
+								<li><a href="">田思露：茶花女的另一种结局</a></li>
+								<li><a href="">西门媚：1994，羊肉串、呼啦圈和外面的世界</a></li>
+								<li><a href="">盗版伤害了中国软件，却撑起了那时的中国经济</a></li>
+								<li><a href="">互联网孤岛，怎样才能连成大陆？</a></li>
+								<li><a href="">王笛：旧社会成都的地域歧视链</a></li>
+								<li><a href="">王斌：让作者待着吧，我要先搓饭</a></li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="contentlayout6_right">
+					<div class="hd">
+						<h2><a href="">星座</a>
+
+					</div>
+
+					<div class="content_left_left">
+						<div class="imageArea3">
+							<a href=""><img src="images/ninja152505859160996.jpg" alt="" /></a>
+						</div>
+						<div class="txtArea3 mar_left">
+							<h3><a href="">哪些星座一周伊始交好运？
+									爱情事业金钱顺风顺水</a></h3>
+						</div>
+						<div>
+							<ul>
+								<li><a href="">对谁都这样没办法 忽冷忽热的四大星座男</a></li>
+								<li><a href="">不要去看这四大星座的朋友圈 很不现实</a></li>
+								<li><a href="">十二星座男有什么表现 说明他不喜欢你</a></li>
+								<li><a href="">本月正逢吉星高照 五月人生逆转的几大生肖</a></li>
+								<li><a href="">被男人们抢着娶回家的四大星座女！</a></li>
+								<li><a href="">十二星座谁最会呵护人？</a></li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="contentlayout6 contentlayout7">
+				<!-- 个性化通栏7start -->
+
+				<div class="contentlayout6_left">
+					<div class="hd">
+						<h2><a href=""> 教育</a><span>/</span>
+							<a href="">出国</a><span>/</span>
+							<a href="">精品课</a>
+					</div>
+
+					<div class="content_left_left">
+						<div class="imageArea3">
+							<a href=""><img src="images/4857336806_227x148.jpg" alt="" /></a>
+						</div>
+						<div class="txtArea3 mar_left">
+							<h3><a href="">教育部@你！4月，这些教育大使与你息息相关</a></h3>
+						</div>
+						<div>
+							<ul>
+								<li><a href="">林志玲，孙怡，马思纯机场私服，活动私服搭配</a></li>
+								<li><a href="">从头 到脚清爽活力的T恤+牛仔裤短裤搭配</a></li>
+								<li><a href="">矮个女生像沈月和周冬雨这样穿搭显高又显瘦</a></li>
+								<li><a href="">大幂幂瘦了！越来越漂亮，新款发型显嫩</a></li>
+								<li><a href="">教你几招出游穿搭技巧，让你轻松拥有最美假期</a></li>
+								<li><a href="">刘涛这形象越来越知性了，戏里戏外都这么美</a></li>
+
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="contentlayout6_mid">
+					<div class="hd">
+						<h2>
+							<a href="">儿童</a><span>/</span>
+							<a href="">育儿</a><span>/</span>
+							<a href="">Fun秀</a><span>/</span>
+						</h2>
+					</div>
+
+					<div class="content_left_left">
+						<div class="imageArea">
+							<div class="image">
+								<a href=""><img src="images/147841858.jpg" alt="" /></a>
+								<p><a href="">二哈和宝</a></p>
+							</div>
+							<div class="image">
+								<a href=""><img src="images/146738257.jpg" alt="" /></a>
+								<p><a href="">二哈和宝</a></p>
+							</div>
+							<div class="image">
+								<a href=""><img src="images/147845451.jpg" alt="" /></a>
+								<p><a href="">二哈和宝</a></p>
+							</div>
+							<div class="image">
+								<a href=""><img src="images/146738241.jpg" alt="" /></a>
+								<p><a href="">二哈和宝</a></p>
+							</div>
+						</div>
+
+						<div class="ul7">
+							<ul>
+								<li><a href="">田思露：茶花女的另一种结局</a></li>
+								<li><a href="">西门媚：1994，羊肉串、呼啦圈和外面的世界</a></li>
+								<li><a href="" class="sp">盗版伤害了中国软件，却撑起了那时的中国经济</a></li>
+								<li><a href="" class="sp">互联网孤岛，怎样才能连成大陆？</a></li>
+								<li><a href="" class="sp">王笛：旧社会成都的地域歧视链</a></li>
+								<li><a href="" class="sp">王斌：让作者待着吧，我要先搓饭</a></li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="contentlayout7_right">
+
+				</div>
+
+			</div>
+		</div>
+
+
+		<div class="yonghushequ1">
+			<div class="contentlayout6">
+				<!-- 个性化通栏8start -->
+
+				<div class="contentlayout6_left">
+					<div class="hd">
+						<h2><a href=""> 时尚</a><span>/</span>
+							<a href="">美容</a><span>/</span>
+							<a href="">健康</a>
+					</div>
+
+					<div class="content_left_left">
+						<div class="imageArea3">
+							<a href=""><img src="images/0 (3).jpg" alt="" /></a>
+						</div>
+						<div class="txtArea3 mar_left">
+							<h3><a href="">俄舰队日本演戏视频曝光完成100多项战术演练</a></h3>
+						</div>
+						<div>
+							<ul>
+								<li><a href="">林志玲，孙怡，马思纯机场私服，活动私服搭配</a></li>
+								<li><a href="">从头 到脚清爽活力的T恤+牛仔裤短裤搭配</a></li>
+								<li><a href="">矮个女生像沈月和周冬雨这样穿搭显高又显瘦</a></li>
+								<li><a href="">大幂幂瘦了！越来越漂亮，新款发型显嫩</a></li>
+								<li><a href="">教你几招出游穿搭技巧，让你轻松拥有最美假期</a></li>
+								<li><a href="">刘涛这形象越来越知性了，戏里戏外都这么美</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="contentlayout6_mid">
+					<div class="hd">
+						<h2>
+							<a href="">游戏 /动漫</a>
+					</div>
+
+					<div class="content_left_left">
+						<div class="imageArea3">
+							<a href=""><img src="images/ninja152504748476185.jpg" alt="" /></a>
+						</div>
+						<div class="txtArea3 mar_left">
+							<h3><a href="">没有东北话，还能做成有趣的春晚吗</a></h3>
+						</div>
+						<div>
+							<ul>
+								<li><a href="">田思露：茶花女的另一种结局</a></li>
+								<li><a href="">西门媚：1994，羊肉串、呼啦圈和外面的世界</a></li>
+								<li><a href="">盗版伤害了中国软件，却撑起了那时的中国经济</a></li>
+								<li><a href="">互联网孤岛，怎样才能连成大陆？</a></li>
+								<li><a href="">王笛：旧社会成都的地域歧视链</a></li>
+								<li><a href="">王斌：让作者待着吧，我要先搓饭</a></li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="contentlayout6_right">
+					<div class="hd">
+						<h2><a href="">专享</a>
+
+					</div>
+
+					<div class="content_left_left">
+						<div class="imageArea3">
+							<a href=""><img src="images/0 (5).jpg" alt="" /></a>
+						</div>
+						<div class="txtArea3 mar_left">
+							<h3><a href="">哪些星座一周伊始交好运？
+									爱情事业金钱顺风顺水</a></h3>
+						</div>
+						<div>
+							<ul>
+								<li><a href="">对谁都这样没办法 忽冷忽热的四大星座男</a></li>
+								<li><a href="">不要去看这四大星座的朋友圈 很不现实</a></li>
+								<li><a href="">十二星座男有什么表现 说明他不喜欢你</a></li>
+								<li><a href="">本月正逢吉星高照 五月人生逆转的几大生肖</a></li>
+								<li><a href="">被男人们抢着娶回家的四大星座女！</a></li>
+								<li><a href="">十二星座谁最会呵护人？</a></li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="contentlayout6 contentlayout7">
+				<!-- 个性化通栏9start -->
+
+				<div class="contentlayout6_left">
+					<div class="hd">
+						<h2><a href="">社会</a>
+					</div>
+
+					<div class="content_left_left">
+						<div class="imageArea3">
+							<a href=""><img src="images/4857336806_227x148.jpg" alt="" /></a>
+						</div>
+						<div class="txtArea3 mar_left">
+							<h3><a href="">教育部@你！4月，这些教育大使与你息息相关</a></h3>
+						</div>
+						<div>
+							<ul>
+								<li><a href="">林志玲，孙怡，马思纯机场私服，活动私服搭配</a></li>
+								<li><a href="">从头 到脚清爽活力的T恤+牛仔裤短裤搭配</a></li>
+								<li><a href="">矮个女生像沈月和周冬雨这样穿搭显高又显瘦</a></li>
+								<li><a href="">大幂幂瘦了！越来越漂亮，新款发型显嫩</a></li>
+								<li><a href="">教你几招出游穿搭技巧，让你轻松拥有最美假期</a></li>
+								<li><a href="">刘涛这形象越来越知性了，戏里戏外都这么美</a></li>
+
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="contentlayout6_mid">
+					<div class="hd">
+						<h2> <a href=""> 儒学</a><span>/</span>
+							<a href="">佛学</a><span>/</span> <a href="">道学</a><span>/</span>
+					</div>
+
+					<div class="content_left_left">
+						<div class="imageArea3">
+							<a href=""><img src="images/147856688.jpg" alt="" /></a>
+						</div>
+						<div class="txtArea3 mar_left">
+							<h3><a href="">有五种人求财，佛菩萨不会让他如愿……</a></h3>
+						</div>
+						<div>
+							<ul>
+								<li><a href="">儒学|方为立身之本 圆乃处世之道</a></li>
+								<li><a href="">活出自己的人生本色：去留无意 宠辱不惊</a></li>
+								<li><a href="">佛学|七大高僧留下的最后一句话，惊醒人心</a></li>
+								<li><a href="">虚云老和尚珍贵开示：念佛与参禅</a></li>
+								<li><a href="">道学|科学VS宗教？不，科学与宗教携手并行</a></li>
+								<li><a href="">中华道学白问|道教对盛唐诗歌到了怎样的影响</a></li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="contentlayout9_right">
+				</div>
+
+			</div>
+		</div>
+
+		<!-- 个性化通栏10 -->
+		<div class="yonghushequ3">
+			<div class="contentlayout6">
+				<div class="contentlayout6_left">
+					<div class="hd">
+						<h2><a href=""> 时尚</a><span>/</span>
+							<a href="">美容</a><span>/</span>
+							<a href="">健康</a>
+					</div>
+
+					<div class="content_left_left">
+						<div class="imageArea3">
+							<a href=""><img src="images/0 (3).jpg" alt="" /></a>
+						</div>
+						<div class="txtArea3 mar_left">
+							<h3><a href="">俄舰队日本演戏视频曝光完成100多项战术演练</a></h3>
+						</div>
+						<div>
+							<ul>
+								<li><a href="">林志玲，孙怡，马思纯机场私服，活动私服搭配</a></li>
+								<li><a href="">从头 到脚清爽活力的T恤+牛仔裤短裤搭配</a></li>
+								<li><a href="">矮个女生像沈月和周冬雨这样穿搭显高又显瘦</a></li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="contentlayout6_mid">
+					<div class="hd">
+						<h2>
+							<a href="">游戏 /动漫</a>
+					</div>
+
+					<div class="content_left_left">
+						<div class="imageArea3">
+							<a href=""><img src="images/ninja152504748476185.jpg" alt="" /></a>
+						</div>
+						<div class="txtArea3 mar_left">
+							<h3><a href="">没有东北话，还能做成有趣的春晚吗</a></h3>
+						</div>
+						<div>
+							<ul>
+								<li><a href="">田思露：茶花女的另一种结局</a></li>
+								<li><a href="">西门媚：1994，羊肉串、呼啦圈和外面的世界</a></li>
+								<li><a href="">盗版伤害了中国软件，却撑起了那时的中国经济</a></li>
+
+
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="contentlayout6_right">
+					<div class="hd">
+						<h2><a href=""> 视觉焦点</a>
+
+					</div>
+
+					<div class="content_left_left">
+						<div class="imageArea3">
+							<a href=""><img src="images/0 (5).jpg" alt="" /></a>
+						</div>
+						<div class="txtArea3 mar_left">
+							<h3><a href="">哪些星座一周伊始交好运？
+									爱情事业金钱顺风顺水</a></h3>
+						</div>
+						<div>
+							<ul>
+								<li><a href="">对谁都这样没办法 忽冷忽热的四大星座男</a></li>
+								<li><a href="">不要去看这四大星座的朋友圈 很不现实</a></li>
+								<li><a href="">十二星座男有什么表现 说明他不喜欢你</a></li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="contentlayoutend">
+				<div class="hd">
+					<h2><a href="">专享</a>
+				</div>
+
+				<div class="shijuejiaodian">
+					<div class="imageend">
+						<a href=""><img src="images/147811938.jpg" alt="" /></a>
+						<p><a href="">83岁老人在大学旁听古...</a></p>
+					</div>
+
+					<div class="imageend">
+						<a href=""><img src="images/147839584.jpg" alt="" /></a>
+						<p><a href="">漂浮金字塔预计2022年...</a></p>
+					</div>
+
+					<div class="imageend">
+						<a href=""><img src="images/147855228.jpg" alt="" /></a>
+						<p><a href="">青春期的记忆</a></p>
+					</div>
+
+					<div class="imageend">
+						<a href=""><img src="images/147771503.jpg" alt="" /></a>
+						<p><a href="">今年新版iPhone猜想</a></p>
+					</div>
+
+					<div class="imageend">
+						<a href=""><img src="images/147854947.jpg" alt="" /></a>
+						<p><a href="">实用！89平改出三室两厅</a></p>
+					</div>
+
+					<div class="imageend last">
+						<a href=""><img src="images/147854601.jpg" alt="" /></a>
+						<p><a href="">10万级别自主SUV如何选</a></p>
+					</div>
+
+					</ul>
+				</div>
+
+				<!-- 最后一条广告栏 -->
+				<div class="bannner lastbanner">
+
+				</div>
+			</div>
+
+
+			<div class="footer">
+				<a href=""> 关于腾讯 |</a>
+				<a href="">About Tencent |</a>
+				<a href="">服务协议 |</a>
+				<a href="">隐私政策 |</a>
+				<a href="">开放平台 |</a>
+				<a href="">广告服务 |</a>
+				<a href="">商务洽谈 |</a>
+				<a href="">腾讯招聘 |</a>
+				<a href="">腾讯公益 |</a>
+				<a href="">客服中心 |</a>
+				<a href="">网站导航 |</a>
+				<a href="">客户端下载 |</a>
+				<a href="">版权所有</a>
+				<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href=""> 深圳举报中心 |</a>
+				<a href="">深圳公安局 |</a>
+				<a href="">抵制违法广告承诺书 |</a>
+				<a href="">阳光.绿色网络工程 |</a>
+				<a href="">版权保护投诉指引 |</a>
+				<a href="">广东省通管局</a>
+				<br />
+				<a href="">粤网文【2017】6138-1456号 新出网证（粤）字010号 网络视听许可证1904073号 增值电信业务经营许可证：粤B2-20090059 B2-20090028</a>
+				</br>
+				<a href="">Copyright 1998-2018 Tencent All Rights ReServed</a>
+
+
+			</div>
+
+
+			<div class="footerNew">
+				<div class="footerNewInner">
+					<div>
+						<span><img src="images/footerNew1.gif" alt="" /></span>
+						<span>
+							<p><a href="">经营性网站备案信息</a></p>
+						</span>
+					</div>
+					<div>
+						<span><img src="images/buliangfooternew2.png" alt="" /></span>
+						<span>
+							<p><a href="">中国互联网</a></p>
+						</span>
+					</div>
+					<div>
+						<span><img src="images/wmlogofooternew2.gif" alt="" /></span>
+						<span>
+							<p><a href="">中国文明网</a></p>
+						</span>
+					</div>
+					<div class="four">
+						<span><img src="images/cxrz5.png" alt="" /></span>
+						<span>
+							<p><a href=""></a></p>
+						</span>
+					</div>
+					<div class="last">
+						<span><img src="images/gswj6.jpg" alt="" /></span>
+						<p><a href="">工商网监电子标识</a></p>
+					</div>
+				</div>
+			</div>
 
 
 
 
 
 </body>
+
 </html>
